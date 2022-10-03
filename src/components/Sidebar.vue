@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col space-y-4 bg-[#262626] text-white px-2 py-4"
+    <div class="flex flex-col space-y-4 bg-neutral-500 border-r border-neutral-300 text-white px-2 py-4"
         :class="{
         'w-64': !collapsedSidebar // This class is only applied when sidebar is collapsed
     }">

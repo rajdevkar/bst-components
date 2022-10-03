@@ -1,5 +1,5 @@
 <template>
-    <nav class="bg-[#262626] p-4">
+    <nav class="bg-neutral-500 border-b border-neutral-300 p-4">
         <button @click="emit('toggleSidebar')" class="text-white"> <!-- emit('toggleSidebar') this function will emit a action outside this component called "toggleSidebar" -->
             Click to toggle sidebar
         </button>

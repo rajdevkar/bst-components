@@ -24,8 +24,22 @@ module.exports = {
       },
 
       colors: {
+        primary: {
+          DEFAULT: "#0A3473",
+          hover: "#082A5E",
+          focus: "#72A6F3",
+          disabled: "#B9D2F9",
+        },
+        secondary: {
+          DEFAULT: "#868685",
+          hover: "#6C6C6B",
+        },
         neutral: {
-          750: '#333333',
+          300: '#424242',
+          350: '#333333',
+          500: '#262626',
+          600: '#1F1F1F',
+          700: '#171717',
         },
         'gold': {
           50: '#ffec5d',
@@ -34,6 +48,7 @@ module.exports = {
           300: '#ffce3f',
           400: '#f8c435',
           500: '#eeba2b',
+          550: '#FBB03A',
           600: '#fbb03b',
           700: '#daa617',
           800: '#d09c0d',
