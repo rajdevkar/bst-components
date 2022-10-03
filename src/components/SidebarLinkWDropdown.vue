@@ -10,14 +10,14 @@
               {{name}} <!-- e.g Dashboard -->
             </span>
             <svg width="20px" height="20px" v-if="!collapsed">
-                <use xlink:href="assets/svg/chevron-down.svg#svg" class="stroke-white group-active:stroke-[#262626]"></use>
+                <use xlink:href="/assets/svg/chevron-down.svg#svg" class="stroke-white group-active:stroke-[#262626]"></use>
             </svg>
         </div>
         <div class="flex flex-col space-y-2 pl-6 mt-2" v-if="dropDownList && !collapsed">
             <div
                 class="group flex items-center space-x-2 w-full hover:bg-[#171717] active:bg-[#FBB03A] text-white active:text-[#262626] text-sm font-medium rounded-sm px-4 py-2 transition-all duration-150 ease-in-out cursor-pointer" v-for="(item, index) in dropDownList" :key="index">
                 <svg width="24px" height="24px">
-                    <use xlink:href="assets/svg/minus.svg#svg" class="stroke-white group-active:stroke-[#262626]"></use>
+                    <use xlink:href="/assets/svg/minus.svg#svg" class="stroke-white group-active:stroke-[#262626]"></use>
                 </svg>
                 <span class="flex-1">{{item}}</span>
             </div>
