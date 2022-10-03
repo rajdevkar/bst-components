@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col min-h-screen bg-neutral-700">
+    <div class="flex flex-col min-h-screen bg-neutral-850">
         <Header @toggleSidebar="toggleSidebar" /> <!-- @toggleSidebar is a action called from inside header component -->
         <div class="flex flex-1 space-x-16">
             <Sidebar :collapsedSidebar="collapsedSidebar" /> <!-- "collapsedSidebar" is a variable that indicates if sidebar is expanded or collapsed -->
