@@ -7,10 +7,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'sarpanch': ['Sarpanch', 'sans-serif'],
-        'orbitron': ['Orbitron', 'sans-serif'],
-        'michroma': ['Michroma', 'sans-serif'],
-        'noto': ['Noto Emoji', 'sans-serif']
+        'noto': ['Noto Sans', 'sans-serif']
       },
       keyframes: {
         blink: {
@@ -36,10 +33,8 @@ module.exports = {
         },
         neutral: {
           300: '#424242',
-          350: '#333333',
-          500: '#262626',
-          600: '#1F1F1F',
-          700: '#171717',
+          750: '#333333',
+          850: '#1F1F1F',
         },
         'gold': {
           50: '#ffec5d',

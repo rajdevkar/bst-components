@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col space-y-4 bg-neutral-500 border-r border-neutral-300 text-white px-2 py-4"
+    <div class="flex flex-col space-y-4 bg-neutral-800 border-r border-neutral-300 text-white px-2 py-4"
         :class="{
         'w-64': !collapsedSidebar // This class is only applied when sidebar is collapsed
     }">
@@ -11,7 +11,7 @@
 
         <SidebarLinkHeading heading="Settings" v-if="!collapsedSidebar" />
 
-        <SidebarLink name="Manage Billing" icon-link="./assets/svg/card.svg#svg" :collapsed="collapsedSidebar" />
+        <SidebarLink name="Manage Billing" icon-link="./assets/svg/card.svg#svg" class="!mt-2" :collapsed="collapsedSidebar" />
         <SidebarLink name="Manage Account" icon-link="./assets/svg/user.svg#svg" :collapsed="collapsedSidebar" />
     </div>
 </template>

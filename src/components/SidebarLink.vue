@@ -2,9 +2,9 @@
 <!-- collapsed variable in v-if tags indicates sidebar is closed or open. You can ignore v-if tags -->
 <template>
     <div class="relative">
-        <a href="/" class="peer group flex items-center space-x-2 w-full hover:bg-neutral-700 active:bg-gold-600 text-white active:text-neutral-750 text-sm font-medium rounded-sm px-4 py-2 transition-all duration-150 ease-in-out">
+        <a href="/" class="peer group flex items-center space-x-2 w-full hover:bg-neutral-900 active:bg-gold-600 text-white active:text-neutral-750 text-sm font-medium rounded-sm px-4 py-2 transition-all duration-150 ease-in-out">
             <svg width="24px" height="24px">
-                <use :xlink:href="iconLink" class="stroke-white group-active:stroke-neutral-350"></use>
+                <use :xlink:href="iconLink"></use>
             </svg>
             <span class="flex-1" v-if="!collapsed">
                 {{name}} <!-- e.g Dashboard -->
