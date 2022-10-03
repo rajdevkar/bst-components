@@ -14,7 +14,7 @@
     <div class="flex flex-1 items-center justify-end lg:justify-between p-4">
       <div class="hidden lg:flex flex-col">
         <span class="font-semibold">Training Calendar</span>
-        <span class="text-xs opacity-80">Create exercise plans according to the calendar for specific groups</span>
+        <span class="text-xs font-normal opacity-80">Create exercise plans according to the calendar for specific groups</span>
       </div>
       <div class="flex items-center space-x-6">
         <svg width="24px" height="24px">
@@ -22,9 +22,9 @@
         </svg>
         <div class="flex space-x-2">
           <img src="https://ui-avatars.com/api/?name=Rahul+Sulegaokar" class="w-10 h-10 rounded-full"/>
-          <div class="hidden md:flex flex-col font-medium">
-            <span class="text-sm">Rahul Sulegaokar</span>
-            <span class="text-xs opacity-80">rsulegaokar@gmail.com</span>
+          <div class="hidden md:flex flex-col">
+            <span class="text-sm font-medium">Rahul Sulegaokar</span>
+            <span class="text-xs font-normal opacity-80">rsulegaokar@gmail.com</span>
           </div>
         </div>
       </div>
