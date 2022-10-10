@@ -12,7 +12,7 @@
         </a>
         <!-- Tooltip to show when sidebar is collapsed -->
         <div class="hidden absolute top-0 left-full peer-hover:inline-block ml-6" v-if="collapsed">
-            <div class="whitespace-nowrap text-neutral-750 bg-gold-600 rounded-sm text-sm font-semibold px-3 py-[10px] transition-opacity duration-150 ease-in-out arrow-left">
+            <div class="whitespace-nowrap text-neutral-750 bg-gold-600 rounded-sm text-sm font-semibold px-3 py-[10px] transition-opacity duration-150 ease-in-out after:absolute after:top-[40%] after:-left-2 after:mt-0 after:border-4 after:border-solid after:border-transparent after:border-r-gold-550">
                 {{name}} <!-- e.g Dashboard -->
             </div>
         </div>
