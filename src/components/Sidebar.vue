@@ -1,5 +1,5 @@
 <template>
-    <div class="flex-col space-y-4 bg-neutral-800 border-r border-neutral-300 text-white px-2 py-4"
+    <div class="flex-col space-y-4 overflow-x-visible overflow-y-auto max-h-[calc(100vh-72px)] bg-neutral-800 border-r border-neutral-350 text-white px-2 py-4"
         :class="{
         'w-64': !collapsedSidebar, // This class is only applied when sidebar is expanded
         'hidden md:flex': collapsedSidebar // This class is for hiding sidebar in mobile view

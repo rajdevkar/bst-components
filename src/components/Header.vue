@@ -1,5 +1,5 @@
 <template>
-  <nav class="flex bg-neutral-800 text-white border-b border-neutral-300 max-h-20">
+  <nav class="flex bg-neutral-800 text-white border-b border-neutral-350 max-h-20">
     <div class="flex items-center w-64 pl-4 py-4">
       <button @click="emit('toggleSidebar')" class="flex items-center text-white">
         <!-- emit('toggleSidebar') this function will emit a action outside this component called "toggleSidebar" -->

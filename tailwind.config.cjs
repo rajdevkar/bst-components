@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'noto': ['Noto Sans', 'sans-serif']
+        'noto-sans': ['Noto Sans', 'sans-serif']
       },
       keyframes: {
         blink: {
@@ -32,7 +32,7 @@ module.exports = {
           hover: "#6C6C6B",
         },
         neutral: {
-          300: '#424242',
+          350: '#424242',
           750: '#333333',
           850: '#1F1F1F',
         },
