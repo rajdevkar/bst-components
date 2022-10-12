@@ -15,7 +15,7 @@ open terminal and `cd` into cloned project directory and run below given command
 ~~~
 npm install
 ~~~
-#### or
+or
 ~~~
 yarn install
 ~~~
@@ -25,7 +25,7 @@ yarn install
 ~~~
 npm run dev
 ~~~
-#### or 
+or 
 ~~~
 yarn run dev
 ~~~
