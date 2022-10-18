@@ -3,21 +3,20 @@
      :class="{
         'bg-gray-100': lastMonth,
          'bg-emerald-100': event,
-          'hover:bg-gold-550 hover:text-neutral-800': !event
      }"
   >
-    <div v-if="!event" class="opacity-0 group-hover:opacity-100 absolute inset-0 py-2 flex flex-col space-y-1 items-center justify-center ease-in-out transition-all duration-400">
+
+    <div v-if="event" class="opacity-0 group-hover:opacity-100 bg-neutral-800 text-white absolute inset-0 flex flex-col space-y-1 items-center justify-center ease-in-out transition-all duration-400">
+      <svg width="20px" height="20px">
+        <use xlink:href="/assets/svg/edit.svg#svg"></use>
+      </svg>
+      <span class="hidden lg:block text-xs font-medium">EDIT PLAN</span>
+    </div>
+    <div v-else class="opacity-0 group-hover:opacity-100 bg-gold-550 text-neutral-800 absolute inset-0 flex flex-col space-y-1 items-center justify-center ease-in-out transition-all duration-400">
       <svg width="24px" height="24px" class="bg-gold-550">
         <use xlink:href="/assets/svg/plus.svg#svg"></use>
       </svg>
       <span class="hidden lg:block text-xs font-medium">CREATE PLAN</span>
-    </div>
-
-    <div v-if="event" class="opacity-0 group-hover:opacity-100 bg-neutral-800 text-white absolute inset-0 py-2 flex flex-col space-y-1 items-center justify-center ease-in-out transition-all duration-400">
-      <svg width="16px" height="16px">
-        <use xlink:href="/assets/svg/edit.svg#svg"></use>
-      </svg>
-      <span class="hidden lg:block text-xs font-medium">EDIT PLAN</span>
     </div>
 
     <span>{{value}}</span>
