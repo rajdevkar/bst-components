@@ -1,7 +1,7 @@
 <template>
   <MainLayout>
     <div class="flex justify-center">
-      <div class="flex flex-col max-w-xl justify-center rounded-sm overflow-hidden">
+      <div class="flex flex-col w-full max-w-xl justify-center rounded-sm overflow-hidden">
 
         <header class="flex flex-row-reverse md:flex-row items-center justify-between md:justify-start md:space-x-6 bg-gray-100 text-gray-700 px-6 py-4 font-semibold">
           <button class="hidden md:block text-xs text-gray-700 bg-white hover:bg-gray-200 rounded-sm border border-gray-300 px-4 py-3 transition-all duration-300 ease-in-out">
@@ -16,7 +16,7 @@
             </button>
           </div>
           <div>
-            <h2 class="uppercase text-sm md:text-xl">October, 2022</h2>
+            <h2 class="text-sm md:text-xl">October, 2022</h2>
           </div>
         </header>
 
