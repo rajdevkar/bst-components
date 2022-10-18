@@ -1,7 +1,7 @@
 <template>
   <div class="peer flex-col space-y-4 overflow-y-scroll bg-neutral-800 border-r border-neutral-350 text-white px-2 py-4"
        :class="{
-            'w-64': !collapsedSidebar, // This class is only applied when sidebar is expanded
+            'w-64 fixed md:relative z-10': !collapsedSidebar, // This class is only applied when sidebar is expanded
             'hidden md:flex': collapsedSidebar // This class is for hiding sidebar in mobile view
         }">
     <SidebarLink name="Dashboard" icon-link="./assets/svg/dashboard.svg#svg" :collapsed="collapsedSidebar"/>
