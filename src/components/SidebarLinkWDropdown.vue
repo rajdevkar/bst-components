@@ -17,7 +17,7 @@
             <div
                 class="group flex items-center space-x-2 w-full hover:bg-neutral-900 active:bg-gold-550 text-white active:text-neutral-800 text-sm font-medium rounded-sm px-4 py-2 transition-all duration-150 ease-in-out cursor-pointer" v-for="(item, index) in dropDownList" :key="index">
                 <svg width="24px" height="24px">
-                    <use xlink:href="/assets/svg/minus.svg#svg" class="stroke-white group-active:stroke-neutral-800"></use>
+                    <use xlink:href="/assets/svg/minus.svg#svg"></use>
                 </svg>
                 <span class="flex-1">{{item}}</span>
             </div>
