@@ -6,7 +6,6 @@
       <!-- "collapsedSidebar" is a variable that indicates if sidebar is expanded or collapsed -->
       <div class="flex-1 flex flex-col overflow-y-scroll text-white p-4">
         <slot/>
-        <span v-for="item in 100">{{ item }}</span>
       </div>
     </div>
   </div>
