@@ -8,10 +8,10 @@
         </button>
         <div class="flex items-center space-x-4">
           <button class="hover:bg-gray-200 rounded-full p-2 transition-all duration-300 ease-in-out">
-            <img src="/assets/svg/chevron-right.svg"/>
+            <img src="/assets/svg/chevron.svg"/>
           </button>
           <button class="hover:bg-gray-200 rounded-full p-2 transition-all duration-300 ease-in-out">
-            <img src="/assets/svg/chevron-left.svg"/>
+            <img src="/assets/svg/chevron.svg" class="rotate-180"/>
           </button>
         </div>
         <div>

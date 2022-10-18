@@ -7,8 +7,8 @@
             <span class="text-xs font-medium text-white/80">Select Group</span>
             <span class="font-semibold mt-2">🏏 Cricket Players Group</span>
           </div>
-          <svg width="20px" height="20px">
-            <use xlink:href="/assets/svg/chevron-down.svg#svg"></use>
+          <svg width="20px" height="20px" class="-rotate-90">
+            <use xlink:href="/assets/svg/chevron.svg#svg"></use>
           </svg>
         </button>
         <button class="flex-1 flex items-center justify-between pt-4 md:pt-0 md:pl-4">

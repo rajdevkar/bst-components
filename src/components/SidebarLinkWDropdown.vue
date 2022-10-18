@@ -9,8 +9,8 @@
             <span class="flex-1" v-if="!collapsed">
               {{name}} <!-- e.g Dashboard -->
             </span>
-            <svg width="20px" height="20px" v-if="!collapsed">
-                <use xlink:href="/assets/svg/chevron-down.svg#svg" class="stroke-white group-active:stroke-neutral-800"></use>
+            <svg width="20px" height="20px" v-if="!collapsed" class="-rotate-90">
+                <use xlink:href="/assets/svg/chevron.svg#svg"></use>
             </svg>
         </div>
         <div class="flex flex-col space-y-2 pl-6 mt-2" v-if="dropDownList && !collapsed">
