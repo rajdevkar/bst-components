@@ -1,7 +1,5 @@
 <template>
-  <div class="flex justify-center">
-    <div class="flex flex-col w-full max-w-xl 2xl:max-w-2xl justify-center rounded-sm overflow-hidden">
-
+  <div class="flex flex-col w-full max-w-xl 2xl:max-w-2xl justify-center rounded-sm overflow-hidden">
       <header
           class="flex flex-row-reverse md:flex-row items-center justify-between md:justify-start md:space-x-8 bg-gray-100 text-gray-700 px-6 py-4 font-semibold">
         <button
@@ -33,8 +31,7 @@
                       v-for="(date, index) in dates" :key="index"
                       class="first:border-t first:border-l last:border-b last:border-r border-gray-300"/>
       </div>
-    </div>
-  </div>
+</div>
 </template>
 
 <script setup>
