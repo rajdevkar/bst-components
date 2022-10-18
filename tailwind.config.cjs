@@ -49,7 +49,6 @@ module.exports = {
           800: '#d09c0d',
           900: '#c69203',
         },
-        success: '#D1FAE5'
       }
     },
   },

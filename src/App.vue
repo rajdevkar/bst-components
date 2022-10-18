@@ -21,13 +21,13 @@
         </header>
 
         <div class="grid cursor-default grid-cols-7 divide-x divide-y divide-gray-300 bg-white">
-          <HeadItem :value="'MON'" class="first:border-t first:border-l last:border-b last:border-r border-gray-300" />
-          <HeadItem :value="'TUE'" class="first:border-t first:border-l last:border-b last:border-r border-gray-300" />
-          <HeadItem :value="'WED'" class="first:border-t first:border-l last:border-b last:border-r border-gray-300" />
-          <HeadItem :value="'THU'" class="first:border-t first:border-l last:border-b last:border-r border-gray-300" />
-          <HeadItem :value="'FRI'" class="first:border-t first:border-l last:border-b last:border-r border-gray-300" />
-          <HeadItem :value="'SAT'" class="first:border-t first:border-l last:border-b last:border-r border-gray-300" />
-          <HeadItem :value="'SUN'" class="first:border-t first:border-l last:border-b last:border-r border-gray-300" />
+          <HeadItem :value="'Mon'" class="first:border-t first:border-l last:border-b last:border-r border-gray-300" />
+          <HeadItem :value="'Tue'" class="first:border-t first:border-l last:border-b last:border-r border-gray-300" />
+          <HeadItem :value="'Wed'" class="first:border-t first:border-l last:border-b last:border-r border-gray-300" />
+          <HeadItem :value="'Thu'" class="first:border-t first:border-l last:border-b last:border-r border-gray-300" />
+          <HeadItem :value="'Fri'" class="first:border-t first:border-l last:border-b last:border-r border-gray-300" />
+          <HeadItem :value="'Sat'" class="first:border-t first:border-l last:border-b last:border-r border-gray-300" />
+          <HeadItem :value="'Sun'" class="first:border-t first:border-l last:border-b last:border-r border-gray-300" />
           <CalendarItem :value="date.date" :lastMonth="date.lastMonth" :event="date.event"
                         v-for="(date, index) in dates" :key="index" class="first:border-t first:border-l last:border-b last:border-r border-gray-300"/>
         </div>
