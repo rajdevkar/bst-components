@@ -7,7 +7,7 @@
             <span class="text-xs font-medium text-white/80">Select Group</span>
             <span class="font-semibold mt-2">🏏 Cricket Players Group</span>
           </div>
-          <svg width="20px" height="20px" class="transition-all duration-300 ease-in-out" :class="show === 'groups' ? 'rotate-90' : '-rotate-90'">
+          <svg width="24px" height="24px" class="transition-all duration-300 ease-in-out" :class="show === 'groups' ? 'rotate-90' : '-rotate-90'">
             <use xlink:href="/assets/svg/chevron.svg#svg"></use>
           </svg>
         </button>
@@ -28,7 +28,7 @@
             <svg width="16px" height="16px">
               <use xlink:href="/assets/svg/search.svg#svg"></use>
             </svg>
-            <input type="text" placeholder="Search" class="text-xs bg-transparent focus:outline-none" />
+            <input type="text" placeholder="Search" class="text-xs bg-transparent text-white focus:outline-none" />
           </div>
 
           <div class="flex items-center space-x-4">
