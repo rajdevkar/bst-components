@@ -25,7 +25,8 @@
         </button>
       </div>
 
-
+      <div class="relative flex w-full justify-center">
+        <!-- Section in this comment is for animation no need to copy it. -->
         <transition
             enter-active-class="transition duration-100 ease-out"
             enter-from-class="transform scale-95 opacity-0"
@@ -34,81 +35,90 @@
             leave-from-class="transform scale-100 opacity-100"
             leave-to-class="transform scale-95 opacity-0"
         >
-          <div v-if="show === 'groups'" class="bg-neutral-800 flex flex-col w-full max-w-xl 2xl:max-w-2xl p-4">
-            <div
-                class="flex flex-col md:flex-row md:items-center space-y-4 md:space-y-0 md:justify-between pb-4 border-b border-neutral-350">
+          <div v-if="show === 'groups'" class="absolute top-0 inset-x-0 flex justify-center">
+            <!-- END SECTION -->
+
+            <div class="bg-neutral-800 flex flex-col w-full max-w-xl 2xl:max-w-2xl p-4">
               <div
-                  class="flex max-w-xs space-x-2 rounded-sm border border-neutral-350 text-neutral-250 placeholder:text-neutral-250 px-4 py-3">
-                <svg width="16px" height="16px">
-                  <use xlink:href="/assets/svg/search.svg#svg"></use>
-                </svg>
-                <input type="text" placeholder="Search" class="text-xs bg-transparent text-white focus:outline-none"/>
-              </div>
-
-              <div class="flex items-center space-x-4">
-                <button class="flex space-x-1 items-center text-gold-550 border border-gold-550 rounded-sm px-4 py-1.5">
+                  class="flex flex-col md:flex-row md:items-center space-y-4 md:space-y-0 md:justify-between pb-4 border-b border-neutral-350">
+                <div
+                    class="flex max-w-xs space-x-2 rounded-sm border border-neutral-350 text-neutral-250 placeholder:text-neutral-250 px-4 py-3">
                   <svg width="16px" height="16px">
-                    <use xlink:href="/assets/svg/edit.svg#svg"></use>
+                    <use xlink:href="/assets/svg/search.svg#svg"></use>
                   </svg>
-                  <span>Edit</span>
-                </button>
+                  <input type="text" placeholder="Search" class="text-xs bg-transparent text-white focus:outline-none"/>
+                </div>
 
-                <button class="flex space-x-1 items-center text-neutral-800 bg-gold-550 rounded-sm px-4 py-2">
-                  <svg width="24px" height="24px" class="shrink-0">
-                    <use xlink:href="/assets/svg/plus.svg#svg"></use>
-                  </svg>
-                  <span>New Group</span>
-                </button>
+                <div class="flex items-center space-x-4">
+                  <button
+                      class="flex space-x-1 items-center text-gold-550 border border-gold-550 rounded-sm px-4 py-1.5">
+                    <svg width="16px" height="16px">
+                      <use xlink:href="/assets/svg/edit.svg#svg"></use>
+                    </svg>
+                    <span>Edit</span>
+                  </button>
+
+                  <button class="flex space-x-1 items-center text-neutral-800 bg-gold-550 rounded-sm px-4 py-2">
+                    <svg width="24px" height="24px" class="shrink-0">
+                      <use xlink:href="/assets/svg/plus.svg#svg"></use>
+                    </svg>
+                    <span>New Group</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="flex flex-col py-1 md:py-4 space-y-4 md:space-y-8">
+                <div class="flex flex-col space-y-1 max-h-96 overflow-y-scroll">
+                  <div
+                      class="group flex items-center justify-between space-x-2 md:space-x-4 hover:bg-gold-550 active:bg-neutral-900 text-sm hover:text-neutral-800 active:hover:text-white font-semibold px-4 py-2.5 rounded-sm cursor-pointer">
+                    <span class="truncate">USK A IN-SEASON MAINTENANCE USK A</span>
+                    <span
+                        class="opacity-0 group-hover:opacity-100 group-active:group-hover:opacity-0 transition-all duration-300 ease-in-out">Select</span>
+                  </div>
+                  <hr class="border-neutral-350"/>
+                  <div
+                      class="group flex items-center justify-between space-x-2 md:space-x-4 hover:bg-gold-550 active:bg-neutral-900 text-sm hover:text-neutral-800 active:hover:text-white font-semibold px-4 py-2.5 rounded-sm cursor-pointer">
+                    <span class="truncate">🏀 BasketBall Athletes</span>
+                    <span
+                        class="opacity-0 group-hover:opacity-100 group-active:group-hover:opacity-0 transition-all duration-300 ease-in-out">Select</span>
+                  </div>
+                  <hr class="border-neutral-350"/>
+                  <div
+                      class="group flex items-center justify-between space-x-2 md:space-x-4 hover:bg-gold-550 active:bg-neutral-900 text-sm hover:text-neutral-800 active:hover:text-white font-semibold px-4 py-2.5 rounded-sm cursor-pointer">
+                    <span class="truncate">🥊 Boxer Athletes</span>
+                    <span
+                        class="opacity-0 group-hover:opacity-100 group-active:group-hover:opacity-0 transition-all duration-300 ease-in-out">Select</span>
+                  </div>
+                  <hr class="border-neutral-350"/>
+                  <div
+                      class="group flex items-center justify-between space-x-2 md:space-x-4 hover:bg-gold-550 active:bg-neutral-900 text-sm hover:text-neutral-800 active:hover:text-white font-semibold px-4 py-2.5 rounded-sm cursor-pointer">
+                    <span class="truncate">🏸 Badminton Prague Players.</span>
+                    <span
+                        class="opacity-0 group-hover:opacity-100 group-active:group-hover:opacity-0 transition-all duration-300 ease-in-out">Select</span>
+                  </div>
+                  <hr class="border-neutral-350"/>
+                  <div
+                      class="group flex items-center justify-between space-x-2 md:space-x-4 hover:bg-gold-550 active:bg-neutral-900 text-sm hover:text-neutral-800 active:hover:text-white font-semibold px-4 py-2.5 rounded-sm cursor-pointer">
+                    <span class="truncate">Rahul Players Group</span>
+                    <span
+                        class="opacity-0 group-hover:opacity-100 group-active:group-hover:opacity-0 transition-all duration-300 ease-in-out">Select</span>
+                  </div>
+                  <hr class="border-neutral-350"/>
+                </div>
+
+                <div class="flex flex-col items-start space-y-2">
+                  <span class="text-white text-xs">You have reached max limit of 5 groups, Upgrade your plan to create more groups.</span>
+                  <button class="text-sm font-semibold text-gold-550">Upgrade Your Plan</button>
+                </div>
               </div>
             </div>
 
-            <div class="flex flex-col py-1 md:py-4 space-y-4 md:space-y-8">
-              <div class="flex flex-col space-y-1 max-h-96 overflow-y-scroll">
-                <div
-                    class="group flex items-center justify-between space-x-2 md:space-x-4 hover:bg-gold-550 active:bg-neutral-900 text-sm hover:text-neutral-800 active:hover:text-white font-semibold px-4 py-2.5 rounded-sm cursor-pointer">
-                  <span class="truncate">USK A IN-SEASON MAINTENANCE USK A</span>
-                  <span
-                      class="opacity-0 group-hover:opacity-100 group-active:group-hover:opacity-0 transition-all duration-300 ease-in-out">Select</span>
-                </div>
-                <hr class="border-neutral-350"/>
-                <div
-                    class="group flex items-center justify-between space-x-2 md:space-x-4 hover:bg-gold-550 active:bg-neutral-900 text-sm hover:text-neutral-800 active:hover:text-white font-semibold px-4 py-2.5 rounded-sm cursor-pointer">
-                  <span class="truncate">🏀 BasketBall Athletes</span>
-                  <span
-                      class="opacity-0 group-hover:opacity-100 group-active:group-hover:opacity-0 transition-all duration-300 ease-in-out">Select</span>
-                </div>
-                <hr class="border-neutral-350"/>
-                <div
-                    class="group flex items-center justify-between space-x-2 md:space-x-4 hover:bg-gold-550 active:bg-neutral-900 text-sm hover:text-neutral-800 active:hover:text-white font-semibold px-4 py-2.5 rounded-sm cursor-pointer">
-                  <span class="truncate">🥊 Boxer Athletes</span>
-                  <span
-                      class="opacity-0 group-hover:opacity-100 group-active:group-hover:opacity-0 transition-all duration-300 ease-in-out">Select</span>
-                </div>
-                <hr class="border-neutral-350"/>
-                <div
-                    class="group flex items-center justify-between space-x-2 md:space-x-4 hover:bg-gold-550 active:bg-neutral-900 text-sm hover:text-neutral-800 active:hover:text-white font-semibold px-4 py-2.5 rounded-sm cursor-pointer">
-                  <span class="truncate">🏸 Badminton Prague Players.</span>
-                  <span
-                      class="opacity-0 group-hover:opacity-100 group-active:group-hover:opacity-0 transition-all duration-300 ease-in-out">Select</span>
-                </div>
-                <hr class="border-neutral-350"/>
-                <div
-                    class="group flex items-center justify-between space-x-2 md:space-x-4 hover:bg-gold-550 active:bg-neutral-900 text-sm hover:text-neutral-800 active:hover:text-white font-semibold px-4 py-2.5 rounded-sm cursor-pointer">
-                  <span class="truncate">Rahul Players Group</span>
-                  <span
-                      class="opacity-0 group-hover:opacity-100 group-active:group-hover:opacity-0 transition-all duration-300 ease-in-out">Select</span>
-                </div>
-                <hr class="border-neutral-350"/>
-              </div>
-
-              <div class="flex flex-col items-start space-y-2">
-                <span class="text-white text-xs">You have reached max limit of 5 groups, Upgrade your plan to create more groups.</span>
-                <button class="text-sm font-semibold text-gold-550">Upgrade Your Plan</button>
-              </div>
-            </div>
+            <!-- Section in this comment is for animation no need to copy it. -->
           </div>
         </transition>
+        <!-- END SECTION -->
 
+        <!-- Section in this comment is for animation no need to copy it. -->
         <transition
             enter-active-class="transition duration-100 ease-out"
             enter-from-class="transform scale-95 opacity-0"
@@ -117,9 +127,16 @@
             leave-from-class="transform scale-100 opacity-100"
             leave-to-class="transform scale-95 opacity-0"
         >
-          <Calendar v-if="show === 'calendar'" />
-        </transition>
+          <div v-if="show === 'calendar'" class="absolute top-0 inset-x-0 flex justify-center">
+            <!-- END SECTION -->
 
+            <Calendar/>
+
+            <!-- Section in this comment is for animation no need to copy it. -->
+          </div>
+        </transition>
+      </div>
+      <!-- END SECTION -->
 
       <div class="text-white">
         Test
