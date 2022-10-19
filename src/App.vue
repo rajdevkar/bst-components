@@ -1,6 +1,8 @@
 <template>
   <MainLayout>
-    <div class="flex flex-col items-center space-y-4">
+    <div class="absolute inset-0" v-if="show !== ''" @click.self="show = ''"></div>
+
+    <div class="flex-1 flex flex-col items-center space-y-4">
       <div
           class="flex flex-col md:flex-row w-full max-w-xl 2xl:max-w-2xl space-y-4 md:space-y-0 md:space-x-4 divide-y md:divide-y-0 md:divide-x divide-neutral-350 border-b border-neutral-350 pb-4">
         <button class="flex-1 flex items-center justify-between" :class="{'text-gold-550 fill-gold-550': show === 'groups'}" @click="show = 'groups'">
@@ -34,7 +36,7 @@
             leave-from-class="transform scale-100 opacity-100"
             leave-to-class="transform scale-95 opacity-0"
         >
-          <div v-if="show === 'groups'" class="absolute top-0 inset-x-0 flex justify-center">
+          <div v-if="show === 'groups'" class="absolute top-0 inset-x-0 flex justify-center" @click.self="show = ''">
             <!-- END SECTION -->
 
             <div class="bg-neutral-800 flex flex-col w-full max-w-xl 2xl:max-w-2xl p-4">
@@ -126,7 +128,7 @@
             leave-from-class="transform scale-100 opacity-100"
             leave-to-class="transform scale-95 opacity-0"
         >
-          <div v-if="show === 'calendar'" class="absolute top-0 inset-x-0 flex justify-center">
+          <div v-if="show === 'calendar'" class="absolute top-0 inset-x-0 flex justify-center" @click.self="show = ''">
             <!-- END SECTION -->
 
             <Calendar/>
