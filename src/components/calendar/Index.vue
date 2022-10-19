@@ -20,13 +20,7 @@
       </header>
 
       <div class="grid cursor-default grid-cols-7 divide-x divide-y divide-gray-300 bg-white">
-        <HeadItem :value="'Mon'" class="first:border-t first:border-l last:border-b last:border-r border-gray-300"/>
-        <HeadItem :value="'Tue'" class="first:border-t first:border-l last:border-b last:border-r border-gray-300"/>
-        <HeadItem :value="'Wed'" class="first:border-t first:border-l last:border-b last:border-r border-gray-300"/>
-        <HeadItem :value="'Thu'" class="first:border-t first:border-l last:border-b last:border-r border-gray-300"/>
-        <HeadItem :value="'Fri'" class="first:border-t first:border-l last:border-b last:border-r border-gray-300"/>
-        <HeadItem :value="'Sat'" class="first:border-t first:border-l last:border-b last:border-r border-gray-300"/>
-        <HeadItem :value="'Sun'" class="first:border-t first:border-l last:border-b last:border-r border-gray-300"/>
+        <HeadItem :value="head" v-for="(head, index) in datesHead" :key="index" class="first:border-t first:border-l last:border-b last:border-r border-gray-300"/>
         <CalendarItem :value="date.date" :lastMonth="date.lastMonth" :event="date.event"
                       v-for="(date, index) in dates" :key="index"
                       class="first:border-t first:border-l last:border-b last:border-r border-gray-300"/>
@@ -37,6 +31,8 @@
 <script setup>
 import CalendarItem from "./Item.vue";
 import HeadItem from "./HeadItem.vue";
+
+const datesHead = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
 const dates = [
   {
