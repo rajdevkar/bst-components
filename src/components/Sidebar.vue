@@ -1,5 +1,5 @@
 <template>
-  <div class="peer flex-col space-y-4 overflow-y-scroll bg-neutral-800 border-r border-neutral-350 text-white px-2 py-4"
+  <div class="peer min-h-[calc(100vh-72px)] flex-col space-y-4 overflow-y-scroll bg-neutral-800 border-r border-neutral-350 text-white px-2 py-4"
        :class="{
             'w-64 fixed md:relative z-10': !collapsedSidebar, // This class is only applied when sidebar is expanded
             'hidden md:flex': collapsedSidebar // This class is for hiding sidebar in mobile view
@@ -18,16 +18,6 @@
     <SidebarLink name="Manage Billing" icon-link="./assets/svg/card.svg#svg" class="!mt-2"
                  :collapsed="collapsedSidebar"/>
     <SidebarLink name="Manage Account" icon-link="./assets/svg/user.svg#svg" :collapsed="collapsedSidebar"/>
-    <SidebarLink name="Manage Account One" icon-link="./assets/svg/user.svg#svg" :collapsed="collapsedSidebar"/>
-    <SidebarLink name="Manage Account Two" icon-link="./assets/svg/user.svg#svg" :collapsed="collapsedSidebar"/>
-    <SidebarLink name="Manage Account Three" icon-link="./assets/svg/user.svg#svg" :collapsed="collapsedSidebar"/>
-    <SidebarLink name="Manage Account Four" icon-link="./assets/svg/user.svg#svg" :collapsed="collapsedSidebar"/>
-    <SidebarLink name="Manage Account Five" icon-link="./assets/svg/user.svg#svg" :collapsed="collapsedSidebar"/>
-    <SidebarLink name="Manage Account Six" icon-link="./assets/svg/user.svg#svg" :collapsed="collapsedSidebar"/>
-    <SidebarLink name="Manage Account Seven" icon-link="./assets/svg/user.svg#svg" :collapsed="collapsedSidebar"/>
-    <SidebarLink name="Manage Account Eight" icon-link="./assets/svg/user.svg#svg" :collapsed="collapsedSidebar"/>
-    <SidebarLink name="Manage Account Nine" icon-link="./assets/svg/user.svg#svg" :collapsed="collapsedSidebar"/>
-    <SidebarLink name="Manage Account Ten" icon-link="./assets/svg/user.svg#svg" :collapsed="collapsedSidebar"/>
   </div>
 </template>
 
