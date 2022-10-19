@@ -5,7 +5,7 @@
         <button class="flex-1 flex items-center justify-between" @click="show = 'groups'">
           <div class="flex flex-col items-start">
             <span class="text-xs font-medium text-white/80">Select Group</span>
-            <span class="font-semibold mt-2">🏏 Cricket Players Group</span>
+            <span class="font-semibold mt-2" :class="{'text-gold-550': show === 'groups'}">🏏 Cricket Players Group</span>
           </div>
           <svg width="24px" height="24px" class="transition-all duration-300 ease-in-out" :class="show === 'groups' ? 'rotate-90' : '-rotate-90'">
             <use xlink:href="/assets/svg/chevron.svg#svg"></use>
@@ -14,7 +14,7 @@
         <button class="flex-1 flex items-center justify-between pt-4 md:pt-0 md:pl-4" @click="show = 'calendar'">
           <div class="flex flex-col items-start">
             <span class="text-xs font-medium text-white/80">Select Date</span>
-            <span class="font-semibold mt-2">11 Sept 2022</span>
+            <span class="font-semibold mt-2" :class="{'text-gold-550': show === 'calendar'}">11 Sept 2022</span>
           </div>
           <svg width="20px" height="20px">
             <use xlink:href="/assets/svg/edit.svg#svg"></use>
@@ -49,7 +49,57 @@
         </div>
 
         <div class="flex flex-col py-1 md:py-4 space-y-4 md:space-y-8">
-          <div class="flex flex-col space-y-1">
+          <div class="flex flex-col space-y-1 max-h-96 overflow-y-scroll">
+            <div class="group flex items-center justify-between space-x-2 md:space-x-4 hover:bg-gold-550 active:bg-neutral-900 text-sm hover:text-neutral-800 active:hover:text-white font-semibold px-4 py-2.5 rounded-sm cursor-pointer">
+              <span class="truncate">USK A IN-SEASON MAINTENANCE USK A</span>
+              <span class="opacity-0 group-hover:opacity-100 group-active:group-hover:opacity-0 transition-all duration-300 ease-in-out">Select</span>
+            </div>
+            <hr class="border-neutral-350" />
+            <div class="group flex items-center justify-between space-x-2 md:space-x-4 hover:bg-gold-550 active:bg-neutral-900 text-sm hover:text-neutral-800 active:hover:text-white font-semibold px-4 py-2.5 rounded-sm cursor-pointer">
+              <span class="truncate">🏀 BasketBall Athletes</span>
+              <span class="opacity-0 group-hover:opacity-100 group-active:group-hover:opacity-0 transition-all duration-300 ease-in-out">Select</span>
+            </div>
+            <hr class="border-neutral-350" />
+            <div class="group flex items-center justify-between space-x-2 md:space-x-4 hover:bg-gold-550 active:bg-neutral-900 text-sm hover:text-neutral-800 active:hover:text-white font-semibold px-4 py-2.5 rounded-sm cursor-pointer">
+              <span class="truncate">🥊 Boxer Athletes</span>
+              <span class="opacity-0 group-hover:opacity-100 group-active:group-hover:opacity-0 transition-all duration-300 ease-in-out">Select</span>
+            </div>
+            <hr class="border-neutral-350" />
+            <div class="group flex items-center justify-between space-x-2 md:space-x-4 hover:bg-gold-550 active:bg-neutral-900 text-sm hover:text-neutral-800 active:hover:text-white font-semibold px-4 py-2.5 rounded-sm cursor-pointer">
+              <span class="truncate">🏸 Badminton Prague Players.</span>
+              <span class="opacity-0 group-hover:opacity-100 group-active:group-hover:opacity-0 transition-all duration-300 ease-in-out">Select</span>
+            </div>
+            <hr class="border-neutral-350" />
+            <div class="group flex items-center justify-between space-x-2 md:space-x-4 hover:bg-gold-550 active:bg-neutral-900 text-sm hover:text-neutral-800 active:hover:text-white font-semibold px-4 py-2.5 rounded-sm cursor-pointer">
+              <span class="truncate">Rahul Players Group</span>
+              <span class="opacity-0 group-hover:opacity-100 group-active:group-hover:opacity-0 transition-all duration-300 ease-in-out">Select</span>
+            </div>
+            <hr class="border-neutral-350" />
+            <div class="group flex items-center justify-between space-x-2 md:space-x-4 hover:bg-gold-550 active:bg-neutral-900 text-sm hover:text-neutral-800 active:hover:text-white font-semibold px-4 py-2.5 rounded-sm cursor-pointer">
+              <span class="truncate">USK A IN-SEASON MAINTENANCE USK A</span>
+              <span class="opacity-0 group-hover:opacity-100 group-active:group-hover:opacity-0 transition-all duration-300 ease-in-out">Select</span>
+            </div>
+            <hr class="border-neutral-350" />
+            <div class="group flex items-center justify-between space-x-2 md:space-x-4 hover:bg-gold-550 active:bg-neutral-900 text-sm hover:text-neutral-800 active:hover:text-white font-semibold px-4 py-2.5 rounded-sm cursor-pointer">
+              <span class="truncate">🏀 BasketBall Athletes</span>
+              <span class="opacity-0 group-hover:opacity-100 group-active:group-hover:opacity-0 transition-all duration-300 ease-in-out">Select</span>
+            </div>
+            <hr class="border-neutral-350" />
+            <div class="group flex items-center justify-between space-x-2 md:space-x-4 hover:bg-gold-550 active:bg-neutral-900 text-sm hover:text-neutral-800 active:hover:text-white font-semibold px-4 py-2.5 rounded-sm cursor-pointer">
+              <span class="truncate">🥊 Boxer Athletes</span>
+              <span class="opacity-0 group-hover:opacity-100 group-active:group-hover:opacity-0 transition-all duration-300 ease-in-out">Select</span>
+            </div>
+            <hr class="border-neutral-350" />
+            <div class="group flex items-center justify-between space-x-2 md:space-x-4 hover:bg-gold-550 active:bg-neutral-900 text-sm hover:text-neutral-800 active:hover:text-white font-semibold px-4 py-2.5 rounded-sm cursor-pointer">
+              <span class="truncate">🏸 Badminton Prague Players.</span>
+              <span class="opacity-0 group-hover:opacity-100 group-active:group-hover:opacity-0 transition-all duration-300 ease-in-out">Select</span>
+            </div>
+            <hr class="border-neutral-350" />
+            <div class="group flex items-center justify-between space-x-2 md:space-x-4 hover:bg-gold-550 active:bg-neutral-900 text-sm hover:text-neutral-800 active:hover:text-white font-semibold px-4 py-2.5 rounded-sm cursor-pointer">
+              <span class="truncate">Rahul Players Group</span>
+              <span class="opacity-0 group-hover:opacity-100 group-active:group-hover:opacity-0 transition-all duration-300 ease-in-out">Select</span>
+            </div>
+            <hr class="border-neutral-350" />
             <div class="group flex items-center justify-between space-x-2 md:space-x-4 hover:bg-gold-550 active:bg-neutral-900 text-sm hover:text-neutral-800 active:hover:text-white font-semibold px-4 py-2.5 rounded-sm cursor-pointer">
               <span class="truncate">USK A IN-SEASON MAINTENANCE USK A</span>
               <span class="opacity-0 group-hover:opacity-100 group-active:group-hover:opacity-0 transition-all duration-300 ease-in-out">Select</span>
