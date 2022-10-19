@@ -3,21 +3,20 @@
     <div class="flex flex-col items-center space-y-4">
       <div
           class="flex flex-col md:flex-row w-full max-w-xl 2xl:max-w-2xl space-y-4 md:space-y-0 md:space-x-4 divide-y md:divide-y-0 md:divide-x divide-neutral-350 border-b border-neutral-350 pb-4">
-        <button class="flex-1 flex items-center justify-between" @click="show = 'groups'">
+        <button class="flex-1 flex items-center justify-between" :class="{'text-gold-550 fill-gold-550': show === 'groups'}" @click="show = 'groups'">
           <div class="flex flex-col items-start">
             <span class="text-xs font-medium text-white/80">Select Group</span>
-            <span class="font-semibold mt-2"
-                  :class="{'text-gold-550': show === 'groups'}">🏏 Cricket Players Group</span>
+            <span class="font-semibold mt-2">🏏 Cricket Players Group</span>
           </div>
           <svg width="24px" height="24px" class="transition-all duration-300 ease-in-out"
                :class="show === 'groups' ? 'rotate-90' : '-rotate-90'">
             <use xlink:href="/assets/svg/chevron.svg#svg"></use>
           </svg>
         </button>
-        <button class="flex-1 flex items-center justify-between pt-4 md:pt-0 md:pl-4" @click="show = 'calendar'">
+        <button class="flex-1 flex items-center justify-between pt-4 md:pt-0 md:pl-4" :class="{'text-gold-550 fill-gold-550': show === 'calendar'}" @click="show = 'calendar'">
           <div class="flex flex-col items-start">
             <span class="text-xs font-medium text-white/80">Select Date</span>
-            <span class="font-semibold mt-2" :class="{'text-gold-550': show === 'calendar'}">11 Sept 2022</span>
+            <span class="font-semibold mt-2">11 Sept 2022</span>
           </div>
           <svg width="20px" height="20px">
             <use xlink:href="/assets/svg/edit.svg#svg"></use>
@@ -51,14 +50,14 @@
 
                 <div class="flex items-center space-x-4">
                   <button
-                      class="flex space-x-1 items-center text-gold-550 border border-gold-550 rounded-sm px-4 py-1.5">
+                      class="flex space-x-1 items-center text-gold-550 font-semibold border border-gold-550 rounded-sm px-4 py-1.5">
                     <svg width="16px" height="16px">
                       <use xlink:href="/assets/svg/edit.svg#svg"></use>
                     </svg>
                     <span>Edit</span>
                   </button>
 
-                  <button class="flex space-x-1 items-center text-neutral-800 bg-gold-550 rounded-sm px-4 py-2">
+                  <button class="flex space-x-1 items-center text-neutral-800 font-semibold bg-gold-550 rounded-sm px-4 py-2">
                     <svg width="24px" height="24px" class="shrink-0">
                       <use xlink:href="/assets/svg/plus.svg#svg"></use>
                     </svg>
@@ -107,7 +106,7 @@
                 </div>
 
                 <div class="flex flex-col items-start space-y-2">
-                  <span class="text-white text-xs">You have reached max limit of 5 groups, Upgrade your plan to create more groups.</span>
+                  <span class="text-white/80 text-xs">You have reached max limit of 5 groups, Upgrade your plan to create more groups.</span>
                   <button class="text-sm font-semibold text-gold-550">Upgrade Your Plan</button>
                 </div>
               </div>
