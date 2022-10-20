@@ -14,7 +14,7 @@
     </div>
     <div v-else class="opacity-0 group-hover:opacity-100 bg-gold-550 text-neutral-800 absolute inset-0 flex flex-col space-y-1 items-center justify-center ease-in-out transition-all duration-400">
       <svg width="24px" height="24px" class="bg-gold-550">
-        <use xlink:href="/assets/svg/plus.svg#svg"></use>
+        <use xlink:href="/assets/svg/plus-big.svg#svg"></use>
       </svg>
       <span class="hidden lg:block text-xs font-medium">CREATE PLAN</span>
     </div>
