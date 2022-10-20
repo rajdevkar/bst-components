@@ -38,7 +38,8 @@
             leave-from-class="transform scale-100 opacity-100"
             leave-to-class="transform scale-95 opacity-0"
         >
-          <div v-if="show === 'groups'" class="absolute top-40 md:top-20 inset-x-0 flex justify-center" @click.self="show = ''">
+          <div v-if="show === 'groups'" class="absolute top-40 md:top-20 inset-x-0 flex justify-center"
+               @click.self="show = ''">
             <!-- END SECTION -->
 
             <GroupSelector/>
@@ -57,7 +58,8 @@
             leave-from-class="transform scale-100 opacity-100"
             leave-to-class="transform scale-95 opacity-0"
         >
-          <div v-if="show === 'calendar'" class="absolute top-40 md:top-20 inset-x-0 flex justify-center" @click.self="show = ''">
+          <div v-if="show === 'calendar'" class="absolute top-40 md:top-20 inset-x-0 flex justify-center"
+               @click.self="show = ''">
             <!-- END SECTION -->
 
             <Calendar/>
@@ -68,8 +70,93 @@
         <!-- END SECTION -->
       </div>
 
-      <div class="text-white">
-        TEST
+      <div class="flex items-center justify-between text-white w-full max-w-xl 2xl:max-w-2xl">
+        <span class="font-semibold">Create plan for 11 Sept 2022</span>
+
+        <div class="flex space-x-4 items-center">
+          <!-- Here no need to write/copy '!p-[7px] !space-x-0' just adjust them directly in classes -->
+          <Button :outline="true" class="!p-[7px] !space-x-0">
+            <template #icon>
+              <svg width="20px" height="20px">
+                <use xlink:href="/assets/svg/dots.svg#svg"></use>
+              </svg>
+            </template>
+          </Button>
+
+          <Button :outline="true" class="hidden md:flex">
+            <template #icon>
+              <svg width="20px" height="20px">
+                <use xlink:href="/assets/svg/share.svg#svg"></use>
+              </svg>
+            </template>
+            Share
+          </Button>
+
+          <Button class="hidden md:flex">
+            <template #icon>
+              <svg width="20px" height="20px">
+                <use xlink:href="/assets/svg/circle-tick.svg#svg"></use>
+              </svg>
+            </template>
+            Save
+          </Button>
+        </div>
+      </div>
+
+      <div class="flex flex-col space-y-4 w-full max-w-xl 2xl:max-w-2xl pb-20">
+        <Accordion label="WEIGHTS (DAY 1)">
+        </Accordion>
+
+        <Accordion label="Name title of the Plan/Workout">
+          <div class="flex flex-col space-y-8 items-center">
+            <input
+                class="w-full text-neutral-800 placeholder:text-gray-400 rounded-sm text-sm focus:outline-none px-4 py-2"
+                placeholder="Add Note/Subtitle"/>
+
+            <div class="flex items-center space-x-4">
+              <Button>
+                <template #icon>
+                  <svg width="20px" height="20px">
+                    <use xlink:href="/assets/svg/plus.svg#svg"></use>
+                  </svg>
+                </template>
+                Add Exercise
+              </Button>
+
+              <Button>
+                <template #icon>
+                  <svg width="20px" height="20px">
+                    <use xlink:href="/assets/svg/plus.svg#svg"></use>
+                  </svg>
+                </template>
+                Add Routine
+              </Button>
+            </div>
+          </div>
+        </Accordion>
+
+        <Accordion label="WEIGHT TONUS">
+        </Accordion>
+      </div>
+
+      <div class="md:hidden fixed bottom-0 inset-x-0 flex space-x-4 bg-neutral-800 p-4">
+        <Button :outline="true" :isLarge="true" class="w-full">
+          <template #icon>
+            <svg width="20px" height="20px">
+              <use xlink:href="/assets/svg/share.svg#svg"></use>
+            </svg>
+          </template>
+          Share
+        </Button>
+
+        <Button :isLarge="true" class="w-full">
+          <template #icon>
+            <svg width="20px" height="20px">
+              <use xlink:href="/assets/svg/circle-tick.svg#svg"></use>
+            </svg>
+          </template>
+          Save
+        </Button>
       </div>
     </div>
   </MainLayout>
@@ -80,6 +167,8 @@ import {ref} from "vue";
 import MainLayout from "./layouts/Main.vue";
 import GroupSelector from "./components/groupSelector/Index.vue";
 import Calendar from "./components/calendar/Index.vue";
+import Button from "./components/Button.vue";
+import Accordion from "./components/Accordion.vue";
 
 const show = ref('');
 </script>
