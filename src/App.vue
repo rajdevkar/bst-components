@@ -38,7 +38,7 @@
             leave-from-class="transform scale-100 opacity-100"
             leave-to-class="transform scale-95 opacity-0"
         >
-          <div v-if="show === 'groups'" class="absolute top-40 md:top-20 inset-x-0 flex justify-center"
+          <div v-if="show === 'groups'" class="absolute top-40 md:top-20 inset-x-0 flex justify-center z-50"
                @click.self="show = ''">
             <!-- END SECTION -->
 
@@ -58,7 +58,7 @@
             leave-from-class="transform scale-100 opacity-100"
             leave-to-class="transform scale-95 opacity-0"
         >
-          <div v-if="show === 'calendar'" class="absolute top-40 md:top-20 inset-x-0 flex justify-center"
+          <div v-if="show === 'calendar'" class="absolute top-40 md:top-20 inset-x-0 flex justify-center z-50"
                @click.self="show = ''">
             <!-- END SECTION -->
 
