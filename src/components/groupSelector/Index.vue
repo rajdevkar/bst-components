@@ -30,7 +30,7 @@
           >
             <!-- on edit button press make this contenteditable true, watch innerText of span tag to update values on submit -->
             <span :contenteditable="group.edit"
-                  :class="{'max-w-[200px] md:max-w-sm border border-neutral-900 px-2 py-0.5 rounded-sm': group.edit, 'truncate': !group.edit}">
+                  :class="{'max-w-[200px] md:max-w-sm border border-neutral-900 px-2 -mx-2 py-1.5 -my-1.5 rounded-sm focus:outline-none': group.edit, 'truncate': !group.edit}">
               {{group.name}}
             </span>
             <div class="flex items-center space-x-2.5 divide-x group-hover:divide-neutral-800"

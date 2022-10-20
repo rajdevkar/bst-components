@@ -107,13 +107,11 @@
         <Accordion label="WEIGHTS (DAY 1)">
         </Accordion>
 
-        <Accordion label="Name title of the Plan/Workout">
-          <div class="flex flex-col space-y-8 items-center">
-            <input
-                class="w-full text-neutral-800 placeholder:text-gray-400 rounded-sm text-sm focus:outline-none px-4 py-2"
-                placeholder="Add Note/Subtitle"/>
+        <Accordion>
+          <div class="flex flex-col space-y-8 items-center px-8 pt-4 pb-8">
+            <Input placeholder="Add Note/Subtitle" />
 
-            <div class="flex items-center space-x-4">
+            <div class="flex flex-col md:flex-row md:items-center space-y-4 md:space-y-0 md:space-x-4">
               <Button>
                 <template #icon>
                   <svg width="20px" height="20px">
@@ -136,6 +134,32 @@
         </Accordion>
 
         <Accordion label="WEIGHT TONUS">
+          <div class="flex flex-col space-y-8 p-8">
+            <div class="relative flex justify-center">
+              <span class="font-semibold">WARM-UP</span>
+              <div class="absolute right-0 flex items-center inset-y-0">
+                <button>
+                  <svg width="20px" height="20px">
+                    <use xlink:href="/assets/svg/dots.svg#svg"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <Card header="Pre-Weights Warm Up #3 (0)">
+              <Input placeholder="Add Sets/Reps/Notes if any..." :hasBorder="true" />
+            </Card>
+
+            <Card header="Box drop double hurdle rebound" :light="false">
+              <div class="!mt-4">
+                <span class="text-xs text-white/80">4x4 (first 2 sets controlled down-up and raise on toes/last two sets explosive up) 90-140kg</span>
+              </div>
+            </Card>
+
+            <Card header="Single Leg Hurdle Hops" :light="false">
+              <Input placeholder="Add Sets/Reps/Notes if any..." :hasBorder="true" />
+            </Card>
+          </div>
         </Accordion>
       </div>
 
@@ -168,7 +192,9 @@ import MainLayout from "./layouts/Main.vue";
 import GroupSelector from "./components/groupSelector/Index.vue";
 import Calendar from "./components/calendar/Index.vue";
 import Button from "./components/Button.vue";
+import Input from "./components/Input.vue";
 import Accordion from "./components/Accordion.vue";
+import Card from "./components/Card.vue";
 
 const show = ref('');
 </script>
