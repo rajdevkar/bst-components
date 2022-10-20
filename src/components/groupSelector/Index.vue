@@ -10,12 +10,14 @@
         <input type="text" placeholder="Search" class="w-full text-sm bg-transparent text-white focus:outline-none"/>
       </div>
 
-      <button class="flex space-x-1 items-center justify-center text-neutral-800 text-sm font-semibold bg-gold-550 rounded-sm px-4 py-2">
-        <svg width="20px" height="20px" class="shrink-0">
-          <use xlink:href="/assets/svg/plus.svg#svg"></use>
-        </svg>
-        <span>New Group</span>
-      </button>
+      <Button>
+        <template #icon>
+          <svg width="20px" height="20px">
+            <use xlink:href="/assets/svg/plus.svg#svg"></use>
+          </svg>
+        </template>
+        New Group
+      </Button>
     </div>
 
     <div class="flex flex-col py-1 md:py-4 space-y-4 md:space-y-8">
@@ -64,6 +66,7 @@
 
 <script setup>
 import {ref} from "vue";
+import Button from "../Button.vue"
 
 const groups = ref([
   {
