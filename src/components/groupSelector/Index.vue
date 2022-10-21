@@ -64,7 +64,6 @@
 
 <script setup>
 import {ref} from "vue";
-import Button from "../Button.vue"
 
 const groups = ref([
   {

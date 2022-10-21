@@ -135,19 +135,43 @@
               </div>
             </div>
 
-            <Card header="Pre-Weights Warm Up #3 (0)">
+            <div class="flex flex-col space-y-2 p-4 bg-white text-neutral-800 rounded-sm">
+              <div class="flex items-center justify-between">
+                <span>header="Pre-Weights Warm Up #3 (0)</span>
+                <button>
+                  <svg width="20px" height="20px">
+                    <use xlink:href="/assets/svg/dots.svg#svg"></use>
+                  </svg>
+                </button>
+              </div>
               <Input placeholder="Add Sets/Reps/Notes if any..." :hasBorder="true" />
-            </Card>
+            </div>
 
-            <Card header="Box drop double hurdle rebound" :light="false">
+            <div class="flex flex-col space-y-2 p-4 bg-neutral-900 text-white rounded-sm">
+              <div class="flex items-center justify-between">
+                <span>Box drop double hurdle rebound</span>
+                <button>
+                  <svg width="20px" height="20px">
+                    <use xlink:href="/assets/svg/dots.svg#svg"></use>
+                  </svg>
+                </button>
+              </div>
               <div class="!mt-4">
                 <span class="text-xs text-white/80">4x4 (first 2 sets controlled down-up and raise on toes/last two sets explosive up) 90-140kg</span>
               </div>
-            </Card>
+            </div>
 
-            <Card header="Single Leg Hurdle Hops" :light="false">
+            <div class="flex flex-col space-y-2 p-4 bg-neutral-900 text-white rounded-sm">
+              <div class="flex items-center justify-between">
+                <span>Single Leg Hurdle Hops</span>
+                <button>
+                  <svg width="20px" height="20px">
+                    <use xlink:href="/assets/svg/dots.svg#svg"></use>
+                  </svg>
+                </button>
+              </div>
               <Input placeholder="Add Sets/Reps/Notes if any..." :hasBorder="true" />
-            </Card>
+            </div>
           </div>
         </Accordion>
       </div>
@@ -176,10 +200,8 @@ import {ref} from "vue";
 import MainLayout from "./layouts/Main.vue";
 import GroupSelector from "./components/groupSelector/Index.vue";
 import Calendar from "./components/calendar/Index.vue";
-import Button from "./components/Button.vue";
 import Input from "./components/Input.vue";
 import Accordion from "./components/Accordion.vue";
-import Card from "./components/Card.vue";
 
 const show = ref('');
 </script>
