@@ -153,7 +153,14 @@
         <Accordion label="WEIGHT TONUS">
           <div class="flex flex-col space-y-4 md:space-y-8 px-4 py-8 md:p-8">
             <div class="relative flex justify-center">
-              <span class="font-semibold">WARM-UP</span>
+              <div class="group relative">
+                <span class="font-semibold">WARM-UP</span>
+                <div class="absolute left-full top-1 hidden group-hover:block pl-2 cursor-pointer">
+                  <svg width="16px" height="16px">
+                    <use xlink:href="/assets/svg/pencil.svg#svg"></use>
+                  </svg>
+                </div>
+              </div>
               <div class="absolute right-4 flex items-center inset-y-0">
                 <div class="relative w-5 h-5">
                   <button
@@ -254,7 +261,14 @@
               </div>
 
               <div class="flex items-center justify-between pr-4">
-                <span class="font-semibold">Circuit #1</span>
+                <div class="group relative">
+                  <span class="font-semibold">Circuit #1</span>
+                  <div class="absolute left-full top-1 hidden group-hover:block pl-2 cursor-pointer">
+                    <svg width="16px" height="16px">
+                      <use xlink:href="/assets/svg/pencil.svg#svg"></use>
+                    </svg>
+                  </div>
+                </div>
                 <div class="relative w-5 h-5">
                   <button
                       type="button"
