@@ -93,7 +93,7 @@
                         leave-to-class="transform opacity-0 scale-95">
               <div
                   v-if="openedDropdownOne"
-                  class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-neutral-800 border border-neutral-350 text-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                  class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-sm bg-neutral-800 border border-neutral-350 text-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
                   role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
                 <div class="py-1" role="none">
                   <a href="#" class="block hover:bg-neutral-900 px-4 py-2 text-sm transition-all duration-150 ease-in-out">Copy Link</a>
@@ -173,7 +173,7 @@
                               leave-to-class="transform opacity-0 scale-95">
                     <div
                         v-if="openedDropdownTwo"
-                        class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-neutral-800 border border-neutral-350 text-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                        class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-sm bg-neutral-800 border border-neutral-350 text-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
                         role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
                       <div class="py-1" role="none">
                         <a href="#" class="block hover:bg-neutral-900 px-4 py-2 text-sm transition-all duration-150 ease-in-out">Copy Link</a>
@@ -208,7 +208,7 @@
                                 leave-to-class="transform opacity-0 scale-95">
                       <div
                           v-if="openedDropdownThree"
-                          class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-neutral-800 border border-neutral-350 text-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                          class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-sm bg-neutral-800 border border-neutral-350 text-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
                           role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
                         <div class="py-1" role="none">
                           <a href="#" class="block hover:bg-neutral-900 px-4 py-2 text-sm transition-all duration-150 ease-in-out">Copy Link</a>
@@ -273,7 +273,7 @@
                               leave-to-class="transform opacity-0 scale-95">
                     <div
                         v-if="openedDropdownFour"
-                        class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-neutral-800 border border-neutral-350 text-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                        class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-sm bg-neutral-800 border border-neutral-350 text-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
                         role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
                       <div class="py-1" role="none">
                         <a href="#" class="block hover:bg-neutral-900 px-4 py-2 text-sm transition-all duration-150 ease-in-out">Copy Link</a>
@@ -305,7 +305,7 @@
                                 leave-to-class="transform opacity-0 scale-95">
                       <div
                           v-if="openedDropdownFive"
-                          class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-neutral-800 border border-neutral-350 text-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                          class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-sm bg-neutral-800 border border-neutral-350 text-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
                           role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
                         <div class="py-1" role="none">
                           <a href="#" class="block hover:bg-neutral-900 px-4 py-2 text-sm transition-all duration-150 ease-in-out">Copy Link</a>
@@ -339,7 +339,7 @@
                                 leave-to-class="transform opacity-0 scale-95">
                       <div
                           v-if="openedDropdownSix"
-                          class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-neutral-800 border border-neutral-350 text-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                          class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-sm bg-neutral-800 border border-neutral-350 text-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
                           role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
                         <div class="py-1" role="none">
                           <a href="#" class="block hover:bg-neutral-900 px-4 py-2 text-sm transition-all duration-150 ease-in-out">Copy Link</a>
