@@ -10,7 +10,7 @@
         <input type="text" placeholder="Search" class="w-full text-sm bg-transparent text-white focus:outline-none"/>
       </div>
 
-      <button class="flex space-x-1 items-center justify-center text-sm font-semibold rounded-sm px-4 py-3 bg-gold-550 text-neutral-800">
+      <button class="flex space-x-1 items-center justify-center text-sm font-semibold rounded-sm px-4 py-2 bg-gold-550 text-neutral-800">
         <svg width="20px" height="20px">
           <use xlink:href="/assets/svg/plus.svg#svg"></use>
         </svg>
