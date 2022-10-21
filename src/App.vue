@@ -74,32 +74,25 @@
         <span class="font-semibold">Create plan for 11 Sept 2022</span>
 
         <div class="flex space-x-4 items-center">
-          <!-- Here no need to write/copy '!p-[7px] !space-x-0' just adjust them directly in classes -->
-          <Button :outline="true" class="!p-[7px] !space-x-0">
-            <template #icon>
-              <svg width="20px" height="20px">
-                <use xlink:href="/assets/svg/dots.svg#svg"></use>
-              </svg>
-            </template>
-          </Button>
+          <button class="flex items-center justify-center text-sm font-semibold rounded-sm p-[7px] hover:bg-gold-550 border border-gold-550 text-gold-550 hover:text-neutral-800 transition-all duration-150 ease-in-out">
+            <svg width="20px" height="20px">
+              <use xlink:href="/assets/svg/dots.svg#svg"></use>
+            </svg>
+          </button>
 
-          <Button :outline="true" class="hidden md:flex">
-            <template #icon>
-              <svg width="20px" height="20px">
-                <use xlink:href="/assets/svg/share.svg#svg"></use>
-              </svg>
-            </template>
-            Share
-          </Button>
+          <button class="hidden md:flex space-x-1 items-center justify-center text-sm font-semibold rounded-sm px-4 py-[7px] hover:bg-gold-550 border border-gold-550 text-gold-550 hover:text-neutral-800 transition-all duration-150 ease-in-out">
+            <svg width="20px" height="20px">
+              <use xlink:href="/assets/svg/share.svg#svg"></use>
+            </svg>
+            <span>Share</span>
+          </button>
 
-          <Button class="hidden md:flex">
-            <template #icon>
-              <svg width="20px" height="20px">
-                <use xlink:href="/assets/svg/circle-tick.svg#svg"></use>
-              </svg>
-            </template>
-            Save
-          </Button>
+          <button class="hidden md:flex space-x-1 items-center justify-center text-sm font-semibold rounded-sm px-4 py-2 bg-gold-550 text-neutral-800">
+            <svg width="20px" height="20px">
+              <use xlink:href="/assets/svg/circle-tick.svg#svg"></use>
+            </svg>
+            <span>Save</span>
+          </button>
         </div>
       </div>
 
@@ -109,26 +102,22 @@
 
         <Accordion>
           <div class="flex flex-col space-y-8 items-center px-8 pt-4 pb-8">
-            <Input placeholder="Add Note/Subtitle" />
+            <input placeholder="Add Note/Subtitle" class="w-full text-neutral-800 placeholder:text-gray-400 rounded-sm text-sm focus:outline-none px-4 py-2" />
 
             <div class="flex flex-col md:flex-row md:items-center space-y-4 md:space-y-0 md:space-x-4">
-              <Button>
-                <template #icon>
-                  <svg width="20px" height="20px">
-                    <use xlink:href="/assets/svg/plus.svg#svg"></use>
-                  </svg>
-                </template>
-                Add Exercise
-              </Button>
+              <button class="flex space-x-1 items-center justify-center text-sm font-semibold rounded-sm px-4 py-2 bg-gold-550 text-neutral-800">
+                <svg width="20px" height="20px">
+                  <use xlink:href="/assets/svg/plus.svg#svg"></use>
+                </svg>
+                <span>Add Exercise</span>
+              </button>
 
-              <Button>
-                <template #icon>
-                  <svg width="20px" height="20px">
-                    <use xlink:href="/assets/svg/plus.svg#svg"></use>
-                  </svg>
-                </template>
-                Add Routine
-              </Button>
+              <button class="flex space-x-1 items-center justify-center text-sm font-semibold rounded-sm px-4 py-2 bg-gold-550 text-neutral-800">
+                <svg width="20px" height="20px">
+                  <use xlink:href="/assets/svg/plus.svg#svg"></use>
+                </svg>
+                <span>Add Routine</span>
+              </button>
             </div>
           </div>
         </Accordion>
@@ -164,23 +153,19 @@
       </div>
 
       <div class="md:hidden fixed bottom-0 inset-x-0 flex space-x-4 bg-neutral-800 p-4">
-        <Button :outline="true" :isLarge="true" class="w-full">
-          <template #icon>
-            <svg width="20px" height="20px">
-              <use xlink:href="/assets/svg/share.svg#svg"></use>
-            </svg>
-          </template>
-          Share
-        </Button>
+        <button class="w-full flex space-x-1 items-center justify-center text-sm font-semibold rounded-sm px-4 py-3 hover:bg-gold-550 border border-gold-550 text-gold-550 hover:text-neutral-800 transition-all duration-150 ease-in-out">
+          <svg width="20px" height="20px">
+            <use xlink:href="/assets/svg/share.svg#svg"></use>
+          </svg>
+          <span>Share</span>
+        </button>
 
-        <Button :isLarge="true" class="w-full">
-          <template #icon>
-            <svg width="20px" height="20px">
-              <use xlink:href="/assets/svg/circle-tick.svg#svg"></use>
-            </svg>
-          </template>
-          Save
-        </Button>
+        <button class="w-full flex space-x-1 items-center justify-center text-sm font-semibold rounded-sm px-4 py-3 bg-gold-550 text-neutral-800">
+          <svg width="20px" height="20px">
+            <use xlink:href="/assets/svg/circle-tick.svg#svg"></use>
+          </svg>
+          <span>Save</span>
+        </button>
       </div>
     </div>
   </MainLayout>

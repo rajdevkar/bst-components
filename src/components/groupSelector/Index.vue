@@ -10,14 +10,12 @@
         <input type="text" placeholder="Search" class="w-full text-sm bg-transparent text-white focus:outline-none"/>
       </div>
 
-      <Button>
-        <template #icon>
-          <svg width="20px" height="20px">
-            <use xlink:href="/assets/svg/plus.svg#svg"></use>
-          </svg>
-        </template>
-        New Group
-      </Button>
+      <button class="flex space-x-1 items-center justify-center text-sm font-semibold rounded-sm px-4 py-3 bg-gold-550 text-neutral-800">
+        <svg width="20px" height="20px">
+          <use xlink:href="/assets/svg/plus.svg#svg"></use>
+        </svg>
+        <span>New Group</span>
+      </button>
     </div>
 
     <div class="flex flex-col py-1 md:py-4 space-y-4 md:space-y-8">
