@@ -406,9 +406,9 @@
         </Accordion>
       </div>
 
-      <div class="!mb-4">
+      <div class="!mb-4 mt-8">
         <button
-            class="flex space-x-3 items-center justify-center font-semibold rounded-sm px-8 py-4 border border-neutral-350 hover:border-gold-550 bg-neutral-800 hover:bg-gold-550 text-gold-550 hover:text-neutral-800 mt-8 transition-all duration-150 ease-in-out">
+            class="flex space-x-3 items-center justify-center font-semibold rounded-sm px-8 py-4 border border-neutral-350 hover:border-gold-550 bg-neutral-800 hover:bg-gold-550 text-gold-550 hover:text-neutral-800 transition-all duration-150 ease-in-out">
           <svg width="24px" height="24px">
             <use xlink:href="/assets/svg/plus-big.svg#svg"></use>
           </svg>

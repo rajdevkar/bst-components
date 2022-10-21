@@ -1,6 +1,6 @@
 <template>
-  <div class="flex flex-col">
-    <div @click.self="isOpen = !isOpen" class="flex justify-between bg-neutral-800 hover:bg-neutral-900 px-4 md:px-8 py-4 cursor-pointer transition-all duration-150 ease-in-out" :class="{'!bg-neutral-900': isOpen}">
+  <div class="flex flex-col border md:border-0 border-neutral-350 rounded-sm overflow-hidden">
+    <div @click.self="isOpen = !isOpen" class="flex justify-between bg-neutral-800 hover:bg-neutral-900 px-4 md:px-8 py-4 cursor-pointer transition-all duration-150 ease-in-out" :class="{'bg-neutral-900 border-b md:border-b-0 border-neutral-350': isOpen}">
       <div class="flex items-center space-x-4 font-semibold">
         <svg @click="isOpen = !isOpen" width="24px" height="24px">
           <use xlink:href="/assets/svg/hamburger-menu.svg#svg"></use>
