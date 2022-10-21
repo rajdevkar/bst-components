@@ -126,13 +126,13 @@
         </Accordion>
 
         <Accordion>
-          <div class="flex flex-col space-y-8 items-center px-8 pt-4 pb-8">
+          <div class="flex flex-col space-y-4 md:space-y-8 items-center px-4 md:px-8 py-8 md:pb-8">
             <input placeholder="Add Note/Subtitle"
                    class="w-full text-neutral-800 placeholder:text-gray-400 rounded-sm text-sm focus:outline-none px-4 py-2"/>
 
-            <div class="flex flex-col md:flex-row md:items-center space-y-4 md:space-y-0 md:space-x-4">
+            <div class="flex items-center space-x-4 w-full md:w-auto">
               <button
-                  class="flex space-x-1 items-center justify-center text-sm font-semibold rounded-sm px-4 py-2 bg-gold-550 text-neutral-800">
+                  class="w-full md:w-auto flex space-x-1 items-center justify-center text-sm font-semibold rounded-sm px-4 py-2 bg-gold-550 text-neutral-800">
                 <svg width="20px" height="20px">
                   <use xlink:href="/assets/svg/plus.svg#svg"></use>
                 </svg>
@@ -140,7 +140,7 @@
               </button>
 
               <button
-                  class="flex space-x-1 items-center justify-center text-sm font-semibold rounded-sm px-4 py-2 bg-gold-550 text-neutral-800">
+                  class="w-full md:w-auto flex space-x-1 items-center justify-center text-sm font-semibold rounded-sm px-4 py-2 bg-gold-550 text-neutral-800">
                 <svg width="20px" height="20px">
                   <use xlink:href="/assets/svg/plus.svg#svg"></use>
                 </svg>
@@ -151,11 +151,11 @@
         </Accordion>
 
         <Accordion label="WEIGHT TONUS">
-          <div class="flex flex-col space-y-8 p-8">
+          <div class="flex flex-col space-y-4 md:space-y-8 px-4 py-8 md:p-8">
             <div class="relative flex justify-center">
               <span class="font-semibold">WARM-UP</span>
               <div class="absolute right-4 flex items-center inset-y-0">
-                <div class="relative">
+                <div class="relative w-5 h-5">
                   <button
                       type="button"
                       @click="openedDropdownTwo = !openedDropdownTwo"
@@ -190,7 +190,7 @@
                 <div class="flex items-center justify-between">
                   <span class="font-medium">Pre-Weights Warm Up #3 (0)</span>
 
-                  <div class="relative">
+                  <div class="relative w-5 h-5">
                     <button
                         type="button"
                         @click="openedDropdownThree = !openedDropdownThree"
@@ -255,7 +255,7 @@
 
               <div class="flex items-center justify-between pr-4">
                 <span class="font-semibold">Circuit #1</span>
-                <div class="relative">
+                <div class="relative w-5 h-5">
                   <button
                       type="button"
                       @click="openedDropdownFour = !openedDropdownFour"
@@ -287,7 +287,7 @@
               <div class="flex flex-col space-y-4 p-4 bg-neutral-900 text-white rounded-sm">
                 <div class="flex items-center justify-between">
                   <span class="font-medium">Box drop double hurdle rebound</span>
-                  <div class="relative">
+                  <div class="relative h-5 w-5">
                     <button
                         type="button"
                         @click="openedDropdownFive = !openedDropdownFive"
@@ -321,7 +321,7 @@
               <div class="flex flex-col space-y-3 p-4 bg-neutral-900 text-white rounded-sm">
                 <div class="flex items-center justify-between">
                   <span class="font-medium">Single Leg Hurdle Hops</span>
-                  <div class="relative">
+                  <div class="relative h-5 w-5">
                     <button
                         type="button"
                         @click="openedDropdownSix = !openedDropdownSix"
@@ -385,9 +385,9 @@
               </div>
             </div>
 
-            <div class="flex flex-col md:flex-row self-center md:items-center space-y-4 md:space-y-0 md:space-x-4">
+            <div class="flex self-center items-center space-x-4 w-full md:w-auto ">
               <button
-                  class="flex space-x-1 items-center justify-center text-sm font-semibold rounded-sm px-4 py-2 bg-gold-550 text-neutral-800">
+                  class="w-full md:w-auto flex space-x-1 items-center justify-center text-sm font-semibold rounded-sm px-4 py-2 bg-gold-550 text-neutral-800">
                 <svg width="20px" height="20px">
                   <use xlink:href="/assets/svg/plus.svg#svg"></use>
                 </svg>
@@ -395,7 +395,7 @@
               </button>
 
               <button
-                  class="flex space-x-1 items-center justify-center text-sm font-semibold rounded-sm px-4 py-2 bg-gold-550 text-neutral-800">
+                  class="w-full md:w-auto flex space-x-1 items-center justify-center text-sm font-semibold rounded-sm px-4 py-2 bg-gold-550 text-neutral-800">
                 <svg width="20px" height="20px">
                   <use xlink:href="/assets/svg/plus.svg#svg"></use>
                 </svg>
@@ -406,17 +406,19 @@
         </Accordion>
       </div>
 
-      <button
-          class="flex space-x-3 items-center justify-center font-semibold rounded-sm px-8 py-4 border border-neutral-350 hover:border-gold-550 bg-neutral-800 hover:bg-gold-550 text-gold-550 hover:text-neutral-800 mt-8 transition-all duration-150 ease-in-out">
-        <svg width="24px" height="24px">
-          <use xlink:href="/assets/svg/plus-big.svg#svg"></use>
-        </svg>
-        <span>Add more block to this to day</span>
-      </button>
+      <div class="!mb-4">
+        <button
+            class="flex space-x-3 items-center justify-center font-semibold rounded-sm px-8 py-4 border border-neutral-350 hover:border-gold-550 bg-neutral-800 hover:bg-gold-550 text-gold-550 hover:text-neutral-800 mt-8 transition-all duration-150 ease-in-out">
+          <svg width="24px" height="24px">
+            <use xlink:href="/assets/svg/plus-big.svg#svg"></use>
+          </svg>
+          <span>Add more block to this to day</span>
+        </button>
+      </div>
 
       <!-- Helps to create empty spacing so that content does not get overlapped by save/share buttons in mobile view -->
       <!-- Not a clean approach -->
-      <div class="md:hidden pb-14 md:pb-0"></div>
+      <div class="md:hidden pb-10 md:pb-0"></div>
 
       <div class="md:hidden fixed bottom-0 inset-x-0 flex space-x-4 bg-neutral-800 p-4">
         <button
