@@ -74,12 +74,34 @@
         <span class="font-semibold">Create plan for 11 Sept 2022</span>
 
         <div class="flex space-x-4 items-center">
-          <button
-              class="flex items-center justify-center text-sm font-semibold rounded-sm p-[7px] hover:bg-gold-550 border border-gold-550 text-gold-550 hover:text-neutral-800 transition-all duration-150 ease-in-out">
-            <svg width="20px" height="20px">
-              <use xlink:href="/assets/svg/dots.svg#svg"></use>
-            </svg>
-          </button>
+          <div class="relative">
+            <button
+                type="button"
+                @click="openedDropdownOne = !openedDropdownOne"
+                class="flex items-center justify-center text-sm font-semibold rounded-sm p-[7px] hover:bg-gold-550 border border-gold-550 text-gold-550 hover:text-neutral-800 transition-all duration-150 ease-in-out"
+            >
+              <svg width="20px" height="20px">
+                <use xlink:href="/assets/svg/dots.svg#svg"></use>
+              </svg>
+            </button>
+
+            <transition enter-active-class="transition ease-out duration-100"
+                        enter-from-class="transform opacity-0 scale-95"
+                        enter-to-class="transform opacity-100 scale-100"
+                        leave-active-class="transition ease-in duration-75"
+                        leave-from-class="transform opacity-100 scale-100"
+                        leave-to-class="transform opacity-0 scale-95">
+              <div
+                  v-if="openedDropdownOne"
+                  class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-neutral-800 border border-neutral-350 text-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                  role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                <div class="py-1" role="none">
+                  <a href="#" class="block hover:bg-neutral-900 px-4 py-2 text-sm transition-all duration-150 ease-in-out">Copy Link</a>
+                  <a href="#" class="block hover:bg-neutral-900 px-4 py-2 text-sm transition-all duration-150 ease-in-out">Share Link</a>
+                </div>
+              </div>
+            </transition>
+          </div>
 
           <button
               class="hidden md:flex space-x-1 items-center justify-center text-sm font-semibold rounded-sm px-4 py-[7px] hover:bg-gold-550 border border-gold-550 text-gold-550 hover:text-neutral-800 transition-all duration-150 ease-in-out">
@@ -133,11 +155,33 @@
             <div class="relative flex justify-center">
               <span class="font-semibold">WARM-UP</span>
               <div class="absolute right-4 flex items-center inset-y-0">
-                <button>
-                  <svg width="20px" height="20px">
-                    <use xlink:href="/assets/svg/dots.svg#svg"></use>
-                  </svg>
-                </button>
+                <div class="relative">
+                  <button
+                      type="button"
+                      @click="openedDropdownTwo = !openedDropdownTwo"
+                  >
+                    <svg width="20px" height="20px">
+                      <use xlink:href="/assets/svg/dots.svg#svg"></use>
+                    </svg>
+                  </button>
+
+                  <transition enter-active-class="transition ease-out duration-100"
+                              enter-from-class="transform opacity-0 scale-95"
+                              enter-to-class="transform opacity-100 scale-100"
+                              leave-active-class="transition ease-in duration-75"
+                              leave-from-class="transform opacity-100 scale-100"
+                              leave-to-class="transform opacity-0 scale-95">
+                    <div
+                        v-if="openedDropdownTwo"
+                        class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-neutral-800 border border-neutral-350 text-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                        role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                      <div class="py-1" role="none">
+                        <a href="#" class="block hover:bg-neutral-900 px-4 py-2 text-sm transition-all duration-150 ease-in-out">Copy Link</a>
+                        <a href="#" class="block hover:bg-neutral-900 px-4 py-2 text-sm transition-all duration-150 ease-in-out">Share Link</a>
+                      </div>
+                    </div>
+                  </transition>
+                </div>
               </div>
             </div>
 
@@ -145,11 +189,34 @@
               <div class="flex flex-col space-y-2 p-4 bg-gray-100 text-neutral-800 rounded-sm">
                 <div class="flex items-center justify-between">
                   <span class="font-medium">Pre-Weights Warm Up #3 (0)</span>
-                  <button>
-                    <svg width="20px" height="20px">
-                      <use xlink:href="/assets/svg/dots.svg#svg"></use>
-                    </svg>
-                  </button>
+
+                  <div class="relative">
+                    <button
+                        type="button"
+                        @click="openedDropdownThree = !openedDropdownThree"
+                    >
+                      <svg width="20px" height="20px">
+                        <use xlink:href="/assets/svg/dots.svg#svg"></use>
+                      </svg>
+                    </button>
+
+                    <transition enter-active-class="transition ease-out duration-100"
+                                enter-from-class="transform opacity-0 scale-95"
+                                enter-to-class="transform opacity-100 scale-100"
+                                leave-active-class="transition ease-in duration-75"
+                                leave-from-class="transform opacity-100 scale-100"
+                                leave-to-class="transform opacity-0 scale-95">
+                      <div
+                          v-if="openedDropdownThree"
+                          class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-neutral-800 border border-neutral-350 text-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                          role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                        <div class="py-1" role="none">
+                          <a href="#" class="block hover:bg-neutral-900 px-4 py-2 text-sm transition-all duration-150 ease-in-out">Copy Link</a>
+                          <a href="#" class="block hover:bg-neutral-900 px-4 py-2 text-sm transition-all duration-150 ease-in-out">Share Link</a>
+                        </div>
+                      </div>
+                    </transition>
+                  </div>
                 </div>
 
                 <div class="flex flex-col items-start">
@@ -168,12 +235,14 @@
                       class="flex items-center space-x-4 text-xs md:text-sm text-white/80 font-medium bg-neutral-900 divide-x divide-neutral-350 px-4 py-2">
                     <div>
                       <input type="radio" id="text_note" name="custom_type" class="peer hidden" checked/>
-                      <label for="text_note" class="font-medium hover:text-white peer-checked:text-gold-550 cursor-pointer">Text
+                      <label for="text_note"
+                             class="font-medium hover:text-white peer-checked:text-gold-550 cursor-pointer">Text
                         Note</label>
                     </div>
                     <div class="pl-4">
                       <input type="radio" id="header" name="custom_type" class="peer hidden"/>
-                      <label for="header" class="font-medium hover:text-white peer-checked:text-gold-550 cursor-pointer">Header</label>
+                      <label for="header"
+                             class="font-medium hover:text-white peer-checked:text-gold-550 cursor-pointer">Header</label>
                     </div>
                     <div class="pl-4">
                       <input type="radio" id="sub_header" name="custom_type" class="peer hidden"/>
@@ -186,21 +255,65 @@
 
               <div class="flex items-center justify-between pr-4">
                 <span class="font-semibold">Circuit #1</span>
-                <button>
-                  <svg width="20px" height="20px">
-                    <use xlink:href="/assets/svg/dots.svg#svg"></use>
-                  </svg>
-                </button>
+                <div class="relative">
+                  <button
+                      type="button"
+                      @click="openedDropdownFour = !openedDropdownFour"
+                  >
+                    <svg width="20px" height="20px">
+                      <use xlink:href="/assets/svg/dots.svg#svg"></use>
+                    </svg>
+                  </button>
+
+                  <transition enter-active-class="transition ease-out duration-100"
+                              enter-from-class="transform opacity-0 scale-95"
+                              enter-to-class="transform opacity-100 scale-100"
+                              leave-active-class="transition ease-in duration-75"
+                              leave-from-class="transform opacity-100 scale-100"
+                              leave-to-class="transform opacity-0 scale-95">
+                    <div
+                        v-if="openedDropdownFour"
+                        class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-neutral-800 border border-neutral-350 text-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                        role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                      <div class="py-1" role="none">
+                        <a href="#" class="block hover:bg-neutral-900 px-4 py-2 text-sm transition-all duration-150 ease-in-out">Copy Link</a>
+                        <a href="#" class="block hover:bg-neutral-900 px-4 py-2 text-sm transition-all duration-150 ease-in-out">Share Link</a>
+                      </div>
+                    </div>
+                  </transition>
+                </div>
               </div>
 
               <div class="flex flex-col space-y-4 p-4 bg-neutral-900 text-white rounded-sm">
                 <div class="flex items-center justify-between">
                   <span class="font-medium">Box drop double hurdle rebound</span>
-                  <button>
-                    <svg width="20px" height="20px">
-                      <use xlink:href="/assets/svg/dots.svg#svg"></use>
-                    </svg>
-                  </button>
+                  <div class="relative">
+                    <button
+                        type="button"
+                        @click="openedDropdownFive = !openedDropdownFive"
+                    >
+                      <svg width="20px" height="20px">
+                        <use xlink:href="/assets/svg/dots.svg#svg"></use>
+                      </svg>
+                    </button>
+
+                    <transition enter-active-class="transition ease-out duration-100"
+                                enter-from-class="transform opacity-0 scale-95"
+                                enter-to-class="transform opacity-100 scale-100"
+                                leave-active-class="transition ease-in duration-75"
+                                leave-from-class="transform opacity-100 scale-100"
+                                leave-to-class="transform opacity-0 scale-95">
+                      <div
+                          v-if="openedDropdownFive"
+                          class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-neutral-800 border border-neutral-350 text-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                          role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                        <div class="py-1" role="none">
+                          <a href="#" class="block hover:bg-neutral-900 px-4 py-2 text-sm transition-all duration-150 ease-in-out">Copy Link</a>
+                          <a href="#" class="block hover:bg-neutral-900 px-4 py-2 text-sm transition-all duration-150 ease-in-out">Share Link</a>
+                        </div>
+                      </div>
+                    </transition>
+                  </div>
                 </div>
                 <span class="text-xs text-white/80 pl-4">4x4 (first 2 sets controlled down-up and raise on toes/last two sets explosive up) 90-140kg</span>
               </div>
@@ -208,11 +321,33 @@
               <div class="flex flex-col space-y-3 p-4 bg-neutral-900 text-white rounded-sm">
                 <div class="flex items-center justify-between">
                   <span class="font-medium">Single Leg Hurdle Hops</span>
-                  <button>
-                    <svg width="20px" height="20px">
-                      <use xlink:href="/assets/svg/dots.svg#svg"></use>
-                    </svg>
-                  </button>
+                  <div class="relative">
+                    <button
+                        type="button"
+                        @click="openedDropdownSix = !openedDropdownSix"
+                    >
+                      <svg width="20px" height="20px">
+                        <use xlink:href="/assets/svg/dots.svg#svg"></use>
+                      </svg>
+                    </button>
+
+                    <transition enter-active-class="transition ease-out duration-100"
+                                enter-from-class="transform opacity-0 scale-95"
+                                enter-to-class="transform opacity-100 scale-100"
+                                leave-active-class="transition ease-in duration-75"
+                                leave-from-class="transform opacity-100 scale-100"
+                                leave-to-class="transform opacity-0 scale-95">
+                      <div
+                          v-if="openedDropdownSix"
+                          class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-neutral-800 border border-neutral-350 text-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                          role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                        <div class="py-1" role="none">
+                          <a href="#" class="block hover:bg-neutral-900 px-4 py-2 text-sm transition-all duration-150 ease-in-out">Copy Link</a>
+                          <a href="#" class="block hover:bg-neutral-900 px-4 py-2 text-sm transition-all duration-150 ease-in-out">Share Link</a>
+                        </div>
+                      </div>
+                    </transition>
+                  </div>
                 </div>
 
                 <div class="flex flex-col items-start">
@@ -231,12 +366,14 @@
                       class="flex items-center space-x-4 text-xs md:text-sm text-white/80 font-medium bg-neutral-900 divide-x divide-neutral-350 px-4 py-2">
                     <div>
                       <input type="radio" id="text_note" name="custom_type" class="peer hidden" checked/>
-                      <label for="text_note" class="font-medium hover:text-white peer-checked:text-gold-550 cursor-pointer">Text
+                      <label for="text_note"
+                             class="font-medium hover:text-white peer-checked:text-gold-550 cursor-pointer">Text
                         Note</label>
                     </div>
                     <div class="pl-4">
                       <input type="radio" id="header" name="custom_type" class="peer hidden"/>
-                      <label for="header" class="font-medium hover:text-white peer-checked:text-gold-550 cursor-pointer">Header</label>
+                      <label for="header"
+                             class="font-medium hover:text-white peer-checked:text-gold-550 cursor-pointer">Header</label>
                     </div>
                     <div class="pl-4">
                       <input type="radio" id="sub_header" name="custom_type" class="peer hidden"/>
@@ -312,4 +449,10 @@ import Accordion from "./components/Accordion.vue";
 const show = ref('');
 const inputText = ref('');
 const inputTextTwo = ref('');
+const openedDropdownOne = ref(false);
+const openedDropdownTwo = ref(false);
+const openedDropdownThree = ref(false);
+const openedDropdownFour = ref(false);
+const openedDropdownFive = ref(false);
+const openedDropdownSix = ref(false);
 </script>
