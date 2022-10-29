@@ -3,14 +3,14 @@
     <div class="absolute inset-0" v-if="show !== ''" @click.self="show = ''"></div>
 
     <div
-        class="absolute inset-0 laptop:relative overflow-y-scroll h-full flex-1 flex justify-center p-4 bg-neutral-900 z-10"
+        class="absolute inset-0 lg:relative overflow-y-scroll h-full flex-1 flex justify-center p-4 bg-neutral-900 z-10"
          v-if="showExercises">
       <div class="flex flex-col items-center space-y-8 w-full max-w-xl 2xl:max-w-2xl">
         <div class="flex flex-col space-y-4">
           <div
-              class="flex flex-col laptop:flex-row laptop:items-center laptop:justify-between space-y-4 md:space-y-0 laptop:pb-4 laptop:border-b laptop:border-neutral-350">
+              class="flex flex-col lg:flex-row lg:items-center lg:justify-between space-y-4 md:space-y-0 lg:pb-4 lg:border-b lg:border-neutral-350">
             <div
-                class="flex items-center justify-between pb-4 laptop:pb-0 border-b laptop:border-b-0 border-neutral-350">
+                class="flex items-center justify-between pb-4 lg:pb-0 border-b lg:border-b-0 border-neutral-350">
               <button
                   class="flex items-center justify-between focus:outline-none">
                 <div class="flex flex-col items-start">
@@ -27,7 +27,7 @@
               <button
                   type="button"
                   @click="showExercises = false"
-                  class="flex laptop:hidden items-center justify-center text-sm font-semibold rounded-sm p-[7px] hover:bg-gold-550 border border-gold-550 text-gold-550 hover:text-neutral-800 transition-all duration-150 ease-in-out"
+                  class="flex lg:hidden items-center justify-center text-sm font-semibold rounded-sm p-[7px] hover:bg-gold-550 border border-gold-550 text-gold-550 hover:text-neutral-800 transition-all duration-150 ease-in-out"
               >
                 <svg width="20px" height="20px">
                   <use xlink:href="/assets/svg/close.svg#svg"></use>
@@ -171,14 +171,14 @@
     </div>
 
     <div
-        class="absolute inset-0 laptop:relative overflow-y-scroll h-full flex-1 flex justify-center p-4 bg-neutral-900 z-10"
+        class="absolute inset-0 lg:relative overflow-y-scroll h-full flex-1 flex justify-center p-4 bg-neutral-900 z-10"
          v-if="showRoutines">
       <div class="flex flex-col space-y-8 w-full max-w-xl 2xl:max-w-2xl">
         <div class="flex flex-col space-y-4">
           <div
-              class="flex flex-col laptop:flex-row laptop:items-center laptop:justify-between space-y-4 laptop:space-y-0 laptop:pb-4 laptop:border-b laptop:border-neutral-350">
+              class="flex flex-col lg:flex-row lg:items-center lg:justify-between space-y-4 lg:space-y-0 lg:pb-4 lg:border-b lg:border-neutral-350">
             <div
-                class="flex items-center justify-between pb-4 laptop:pb-0 border-b laptop:border-b-0 border-neutral-350">
+                class="flex items-center justify-between pb-4 lg:pb-0 border-b lg:border-b-0 border-neutral-350">
               <button
                   class="flex items-center justify-between focus:outline-none">
                 <div class="flex flex-col items-start">
@@ -195,7 +195,7 @@
               <button
                   type="button"
                   @click="showRoutines = false"
-                  class="flex laptop:hidden items-center justify-center text-sm font-semibold rounded-sm p-[7px] hover:bg-gold-550 border border-gold-550 text-gold-550 hover:text-neutral-800 transition-all duration-150 ease-in-out"
+                  class="flex lg:hidden items-center justify-center text-sm font-semibold rounded-sm p-[7px] hover:bg-gold-550 border border-gold-550 text-gold-550 hover:text-neutral-800 transition-all duration-150 ease-in-out"
               >
                 <svg width="20px" height="20px">
                   <use xlink:href="/assets/svg/close.svg#svg"></use>

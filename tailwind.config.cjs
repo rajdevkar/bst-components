@@ -6,9 +6,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      screens: {
-        'laptop': '1024px',
-      },
       fontFamily: {
         'noto-sans': ['Noto Sans', 'sans-serif']
       },
