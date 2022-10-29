@@ -1,10 +1,10 @@
 <template>
   <div class="flex flex-col min-h-screen bg-neutral-850">
     <Header @toggleSidebar="toggleSidebar"/> <!-- @toggleSidebar is a action called from inside header component -->
-    <div class="flex flex-1 mt-[72px] max-h-[calc(100vh-72px)] overflow-hidden scale-100">
+    <div class="flex flex-1 mt-[72px] max-h-[calc(100vh-72px)] md:overflow-hidden scale-100">
       <Sidebar :collapsedSidebar="collapsedSidebar"/>
       <!-- "collapsedSidebar" is a variable that indicates if sidebar is expanded or collapsed -->
-      <div class="flex-1 flex flex-col overflow-y-scroll text-white p-4">
+      <div class="flex-1 flex overflow-y-scroll text-white">
         <slot/>
       </div>
     </div>

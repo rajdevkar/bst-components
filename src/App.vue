@@ -2,7 +2,319 @@
   <MainLayout>
     <div class="absolute inset-0" v-if="show !== ''" @click.self="show = ''"></div>
 
-    <div class="flex-1 flex flex-col items-center space-y-8">
+    <div
+        class="absolute inset-0 laptop:relative overflow-y-scroll h-full flex-1 flex justify-center p-4 bg-neutral-900 z-10"
+         v-if="showExercises">
+      <div class="flex flex-col items-center space-y-8 w-full max-w-xl 2xl:max-w-2xl">
+        <div class="flex flex-col space-y-4">
+          <div
+              class="flex flex-col laptop:flex-row laptop:items-center laptop:justify-between space-y-4 md:space-y-0 laptop:pb-4 laptop:border-b laptop:border-neutral-350">
+            <div
+                class="flex items-center justify-between pb-4 laptop:pb-0 border-b laptop:border-b-0 border-neutral-350">
+              <button
+                  class="flex items-center justify-between focus:outline-none">
+                <div class="flex flex-col items-start">
+                  <span class="text-xs font-medium text-white/80">Select Exercise Category</span>
+                  <div class="flex items-end space-x-2">
+                    <span class="font-semibold mt-2">🏃‍♀️RUNNING/SPEED/AGILITY</span>
+                    <svg width="20px" height="20px" class="transition-all duration-300 ease-in-out -rotate-90">
+                      <use xlink:href="/assets/svg/chevron.svg#svg"></use>
+                    </svg>
+                  </div>
+                </div>
+              </button>
+
+              <button
+                  type="button"
+                  @click="showExercises = false"
+                  class="flex laptop:hidden items-center justify-center text-sm font-semibold rounded-sm p-[7px] hover:bg-gold-550 border border-gold-550 text-gold-550 hover:text-neutral-800 transition-all duration-150 ease-in-out"
+              >
+                <svg width="20px" height="20px">
+                  <use xlink:href="/assets/svg/close.svg#svg"></use>
+                </svg>
+              </button>
+            </div>
+
+            <label for="only_my_routine"
+                   class="flex items-center space-x-2 bg-neutral-800 text-sm text-gold-550 font-semibold rounded-sm px-4 py-3 cursor-pointer">
+              <input type="checkbox" id="only_my_routine" name="only_my_routine"
+                     class="bg-transparent border border-gold-550 accent-gold-550 w-4 h-4"/>
+              <span>Show My Exercises</span>
+            </label>
+          </div>
+
+          <div
+              class="w-full flex items-center space-x-2 rounded-sm bg-neutral-800 border border-neutral-350 text-neutral-250 placeholder:text-neutral-250 px-4 py-3">
+            <svg width="16px" height="16px" class="shrink-0">
+              <use xlink:href="/assets/svg/search.svg#svg"></use>
+            </svg>
+            <input type="text" placeholder="Search Exercises"
+                   class="w-full text-sm bg-transparent text-white focus:outline-none"/>
+          </div>
+
+          <div class="flex flex-wrap gap-2">
+            <div
+                class="inline-block whitespace-nowrap bg-blue-100 hover:bg-gold-550 active:bg-gold-550 text-sm text-neutral-800 rounded-sm px-2 py-1 transition-all duration-150 ease-in-out cursor-pointer">
+              Balance (all types)
+            </div>
+            <div
+                class="inline-block whitespace-nowrap bg-blue-100 hover:bg-gold-550 active:bg-gold-550 text-sm text-neutral-800 rounded-sm px-2 py-1 transition-all duration-150 ease-in-out cursor-pointer">
+              Quadruped exercises
+            </div>
+            <div
+                class="inline-block whitespace-nowrap bg-blue-100 hover:bg-gold-550 active:bg-gold-550 text-sm text-neutral-800 rounded-sm px-2 py-1 transition-all duration-150 ease-in-out cursor-pointer">
+              Balance (all types)
+            </div>
+            <div
+                class="inline-block whitespace-nowrap bg-blue-100 hover:bg-gold-550 active:bg-gold-550 text-sm text-neutral-800 rounded-sm px-2 py-1 transition-all duration-150 ease-in-out cursor-pointer">
+              Balance (all)
+            </div>
+            <div
+                class="inline-block whitespace-nowrap bg-blue-100 hover:bg-gold-550 active:bg-gold-550 text-sm text-neutral-800 rounded-sm px-2 py-1 transition-all duration-150 ease-in-out cursor-pointer">
+              Quadruped exercises
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-4 !pb-14">
+          <div class="flex flex-col space-y-2 bg-neutral-800 rounded-sm p-2 cursor-pointer">
+            <div class="relative rounded-sm overflow-hidden">
+              <img src="/assets/imgs/1.png"
+                   class="w-full object-cover flex-1 aspect-videos rounded-sm"/>
+              <button
+                  class="absolute bottom-2 right-2 flex space-x-1 items-center justify-center text-sm font-semibold rounded-sm px-3 py-2 bg-gold-550 text-neutral-800">
+                <svg width="20px" height="20px">
+                  <use xlink:href="/assets/svg/plus.svg#svg"></use>
+                </svg>
+                <span>ADD</span>
+              </button>
+            </div>
+            <span class="text-sm whitespace-nowrap truncate">Backwards hammer throws</span>
+          </div>
+
+          <div class="flex flex-col space-y-2 bg-neutral-800 rounded-sm p-2 cursor-pointer">
+            <div class="relative rounded-sm overflow-hidden">
+              <img src="/assets/imgs/2.png"
+                   class="w-full object-cover flex-1 aspect-videos rounded-sm"/>
+              <button
+                  class="absolute bottom-2 right-2 flex space-x-1 items-center justify-center text-sm font-semibold rounded-sm px-3 py-2 bg-gold-550 text-neutral-800">
+                <svg width="20px" height="20px">
+                  <use xlink:href="/assets/svg/tick.svg#svg"></use>
+                </svg>
+                <span>ADDED</span>
+              </button>
+            </div>
+            <span class="text-sm whitespace-nowrap truncate">Box drop hurdle rebound</span>
+          </div>
+
+          <div class="flex flex-col space-y-2 bg-neutral-800 rounded-sm p-2 cursor-pointer">
+            <div class="relative rounded-sm overflow-hidden">
+              <img src="/assets/imgs/3.png"
+                   class="w-full object-cover flex-1 aspect-videos rounded-sm"/>
+              <button
+                  class="absolute bottom-2 right-2 flex space-x-1 items-center justify-center text-sm font-semibold rounded-sm px-3 py-2 bg-gold-550 text-neutral-800">
+                <svg width="20px" height="20px">
+                  <use xlink:href="/assets/svg/plus.svg#svg"></use>
+                </svg>
+                <span>ADD</span>
+              </button>
+            </div>
+            <span class="text-sm whitespace-nowrap truncate">Hurdle hops (sideways)</span>
+          </div>
+
+          <div class="flex flex-col space-y-2 bg-neutral-800 rounded-sm p-2 cursor-pointer">
+            <div class="relative rounded-sm overflow-hidden">
+              <img src="/assets/imgs/4.png"
+                   class="w-full object-cover flex-1 aspect-videos rounded-sm"/>
+              <button
+                  class="absolute bottom-2 right-2 flex space-x-1 items-center justify-center text-sm font-semibold rounded-sm px-3 py-2 bg-gold-550 text-neutral-800">
+                <svg width="20px" height="20px">
+                  <use xlink:href="/assets/svg/plus.svg#svg"></use>
+                </svg>
+                <span>ADD</span>
+              </button>
+            </div>
+            <span class="text-sm whitespace-nowrap truncate">Hurdle hops (vertical-to-horizontal)</span>
+          </div>
+
+          <div class="flex flex-col space-y-2 bg-neutral-800 rounded-sm p-2 cursor-pointer">
+            <div class="relative rounded-sm overflow-hidden">
+              <img src="/assets/imgs/1.png"
+                   class="w-full object-cover flex-1 aspect-videos rounded-sm"/>
+              <button
+                  class="absolute bottom-2 right-2 flex space-x-1 items-center justify-center text-sm font-semibold rounded-sm px-3 py-2 bg-gold-550 text-neutral-800">
+                <svg width="20px" height="20px">
+                  <use xlink:href="/assets/svg/plus.svg#svg"></use>
+                </svg>
+                <span>ADD</span>
+              </button>
+            </div>
+            <span class="text-sm whitespace-nowrap truncate">Hurdle hops (vertical-to-horizontal)</span>
+          </div>
+
+          <div class="flex flex-col space-y-2 bg-neutral-800 rounded-sm p-2 cursor-pointer">
+            <div class="relative rounded-sm overflow-hidden">
+              <img src="/assets/imgs/1.png"
+                   class="w-full object-cover flex-1 aspect-videos rounded-sm"/>
+              <button
+                  class="absolute bottom-2 right-2 flex space-x-1 items-center justify-center text-sm font-semibold rounded-sm px-3 py-2 bg-gold-550 text-neutral-800">
+                <svg width="20px" height="20px">
+                  <use xlink:href="/assets/svg/plus.svg#svg"></use>
+                </svg>
+                <span>ADD</span>
+              </button>
+            </div>
+            <span class="text-sm whitespace-nowrap truncate">Hurdle hops (vertical-to-horizontal)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+        class="absolute inset-0 laptop:relative overflow-y-scroll h-full flex-1 flex justify-center p-4 bg-neutral-900 z-10"
+         v-if="showRoutines">
+      <div class="flex flex-col space-y-8 w-full max-w-xl 2xl:max-w-2xl">
+        <div class="flex flex-col space-y-4">
+          <div
+              class="flex flex-col laptop:flex-row laptop:items-center laptop:justify-between space-y-4 laptop:space-y-0 laptop:pb-4 laptop:border-b laptop:border-neutral-350">
+            <div
+                class="flex items-center justify-between pb-4 laptop:pb-0 border-b laptop:border-b-0 border-neutral-350">
+              <button
+                  class="flex items-center justify-between focus:outline-none">
+                <div class="flex flex-col items-start">
+                  <span class="text-xs font-medium text-white/80">Select Routines Category</span>
+                  <div class="flex items-end space-x-2">
+                    <span class="font-semibold mt-2">🌞WARM UP/DOWN</span>
+                    <svg width="20px" height="20px" class="transition-all duration-300 ease-in-out -rotate-90">
+                      <use xlink:href="/assets/svg/chevron.svg#svg"></use>
+                    </svg>
+                  </div>
+                </div>
+              </button>
+
+              <button
+                  type="button"
+                  @click="showRoutines = false"
+                  class="flex laptop:hidden items-center justify-center text-sm font-semibold rounded-sm p-[7px] hover:bg-gold-550 border border-gold-550 text-gold-550 hover:text-neutral-800 transition-all duration-150 ease-in-out"
+              >
+                <svg width="20px" height="20px">
+                  <use xlink:href="/assets/svg/close.svg#svg"></use>
+                </svg>
+              </button>
+            </div>
+
+            <label for="only_my_routine"
+                   class="flex items-center space-x-2 bg-neutral-800 text-sm text-gold-550 font-semibold rounded-sm px-4 py-3 cursor-pointer">
+              <input type="checkbox" id="only_my_routine" name="only_my_routine"
+                     class="bg-transparent border border-gold-550 accent-gold-550 w-4 h-4"/>
+              <span>Only My Routines</span>
+            </label>
+          </div>
+
+          <div
+              class="w-full flex items-center space-x-2 rounded-sm bg-neutral-800 border border-neutral-350 text-neutral-250 placeholder:text-neutral-250 px-4 py-3">
+            <svg width="16px" height="16px" class="shrink-0">
+              <use xlink:href="/assets/svg/search.svg#svg"></use>
+            </svg>
+            <input type="text" placeholder="Search Routines"
+                   class="w-full text-sm bg-transparent text-white focus:outline-none"/>
+          </div>
+
+          <div class="flex flex-wrap gap-2 w-full max-w-xl 2xl:max-w-2xl">
+            <div class="inline-block whitespace-nowrap bg-blue-100 hover:bg-gold-550 active:bg-gold-550 text-sm text-neutral-800 rounded-sm px-2 py-1 transition-all duration-150 ease-in-out cursor-pointer">
+              Dynamic mobility routines
+            </div>
+            <div class="inline-block whitespace-nowrap bg-blue-100 hover:bg-gold-550 active:bg-gold-550 text-sm text-neutral-800 rounded-sm px-2 py-1 transition-all duration-150 ease-in-out cursor-pointer">
+              Neuro wake up routines
+            </div>
+            <div class="inline-block whitespace-nowrap bg-blue-100 hover:bg-gold-550 active:bg-gold-550 text-sm text-neutral-800 rounded-sm px-2 py-1 transition-all duration-150 ease-in-out cursor-pointer">
+              Warm Down Routines
+            </div>
+            <div class="inline-block whitespace-nowrap bg-blue-100 hover:bg-gold-550 active:bg-gold-550 text-sm text-neutral-800 rounded-sm px-2 py-1 transition-all duration-150 ease-in-out cursor-pointer">
+              Warm Up Routines
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-neutral-800 rounded-sm">
+          <div class="flex items-center bg-neutral-850 text-xs text-white/80 px-4 py-2">
+            <span class="flex-1">Routine Name</span>
+            <span class="flex-1 text-center">Action</span>
+          </div>
+          <div class="flex flex-col space-y-4 pt-3 px-4 pb-4">
+            <div class="w-full flex flex-col space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="font-medium">Balance-Mobility WU #1</span>
+                <div class="flex items-center space-x-2">
+                  <button
+                      class="flex items-center justify-center text-sm font-semibold rounded-sm p-[7px] hover:bg-gold-550 border border-gold-550 text-gold-550 hover:text-neutral-800 transition-all duration-150 ease-in-out">
+                    <svg width="16px" height="16px">
+                      <use xlink:href="/assets/svg/eye.svg#svg"></use>
+                    </svg>
+                  </button>
+
+                  <button
+                      class="flex items-center justify-center text-sm font-semibold rounded-sm p-1.5 bg-gold-550 text-neutral-800">
+                    <svg width="20px" height="20px">
+                      <use xlink:href="/assets/svg/plus.svg#svg"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <hr class="border border-neutral-350"/>
+            </div>
+
+            <div class="w-full flex flex-col space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="font-medium">Balance-Mobility WU #2</span>
+                <div class="flex items-center space-x-2">
+                  <button
+                      class="flex items-center justify-center text-sm font-semibold rounded-sm p-[7px] hover:bg-gold-550 border border-gold-550 text-gold-550 hover:text-neutral-800 transition-all duration-150 ease-in-out">
+                    <svg width="16px" height="16px">
+                      <use xlink:href="/assets/svg/eye.svg#svg"></use>
+                    </svg>
+                  </button>
+
+                  <button
+                      class="flex items-center justify-center text-sm font-semibold rounded-sm p-1.5 bg-gold-550 text-neutral-800">
+                    <svg width="20px" height="20px">
+                      <use xlink:href="/assets/svg/tick.svg#svg"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <hr class="border border-neutral-350"/>
+            </div>
+
+            <div class="w-full flex flex-col space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="font-medium">Balance-Mobility WU #3</span>
+                <div class="flex items-center space-x-2">
+                  <button
+                      class="flex items-center justify-center text-sm font-semibold rounded-sm p-[7px] hover:bg-gold-550 border border-gold-550 text-gold-550 hover:text-neutral-800 transition-all duration-150 ease-in-out">
+                    <svg width="16px" height="16px">
+                      <use xlink:href="/assets/svg/eye.svg#svg"></use>
+                    </svg>
+                  </button>
+
+                  <button
+                      class="flex items-center justify-center text-sm font-semibold rounded-sm p-1.5 bg-gold-550 text-neutral-800">
+                    <svg width="20px" height="20px">
+                      <use xlink:href="/assets/svg/plus.svg#svg"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <hr class="border border-neutral-350"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+        class="flex-1 flex flex-col overflow-y-scroll items-center space-y-8 p-4"
+        :class="{'border-l border-neutral-350': showExercises || showRoutines}">
       <div class="relative flex w-full justify-center">
         <div
             class="flex flex-col md:flex-row w-full max-w-xl 2xl:max-w-2xl space-y-4 md:space-y-0 md:space-x-4 divide-y md:divide-y-0 md:divide-x divide-neutral-350 border-b border-neutral-350 pb-4">
@@ -38,7 +350,7 @@
             leave-from-class="transform scale-100 opacity-100"
             leave-to-class="transform scale-95 opacity-0"
         >
-          <div v-if="show === 'groups'" class="absolute top-40 md:top-20 inset-x-0 flex justify-center z-50"
+          <div v-if="show === 'groups'" class="absolute top-40 md:top-20 inset-x-0 flex justify-center z-40"
                @click.self="show = ''">
             <!-- END SECTION -->
 
@@ -58,7 +370,7 @@
             leave-from-class="transform scale-100 opacity-100"
             leave-to-class="transform scale-95 opacity-0"
         >
-          <div v-if="show === 'calendar'" class="absolute top-40 md:top-20 inset-x-0 flex justify-center z-50"
+          <div v-if="show === 'calendar'" class="absolute top-40 md:top-20 inset-x-0 flex justify-center z-40"
                @click.self="show = ''">
             <!-- END SECTION -->
 
@@ -73,7 +385,7 @@
       <div class="flex items-center justify-between text-white w-full max-w-xl 2xl:max-w-2xl">
         <span class="font-semibold">Create plan for 11 Sept 2022</span>
 
-        <div class="flex space-x-4 items-center">
+        <div class="flex md:space-x-4 items-center">
           <div class="relative">
             <button
                 type="button"
@@ -96,28 +408,36 @@
                   class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-sm bg-neutral-800 border border-neutral-350 text-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
                   role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
                 <div class="py-1" role="none">
-                  <a href="#" class="block hover:bg-neutral-900 px-4 py-2 text-sm transition-all duration-150 ease-in-out">Copy Link</a>
-                  <a href="#" class="block hover:bg-neutral-900 px-4 py-2 text-sm transition-all duration-150 ease-in-out">Share Link</a>
+                  <a href="#"
+                     class="block hover:bg-neutral-900 px-4 py-2 text-sm transition-all duration-150 ease-in-out">Copy
+                    Link</a>
+                  <a href="#"
+                     class="block hover:bg-neutral-900 px-4 py-2 text-sm transition-all duration-150 ease-in-out">Share
+                    Link</a>
                 </div>
               </div>
             </transition>
           </div>
 
-          <button
-              class="hidden md:flex space-x-1 items-center justify-center text-sm font-semibold rounded-sm px-4 py-[7px] hover:bg-gold-550 border border-gold-550 text-gold-550 hover:text-neutral-800 transition-all duration-150 ease-in-out">
-            <svg width="20px" height="20px">
-              <use xlink:href="/assets/svg/share.svg#svg"></use>
-            </svg>
-            <span>Share</span>
-          </button>
+          <div class="md:relative fixed bottom-0 inset-x-0 flex justify-center bg-neutral-800 md:bg-transparent p-4 md:p-0">
+            <div class="flex space-x-4 w-full max-w-xl 2xl:max-w-2xl">
+              <button
+                  class="flex-1 md:flex-0 flex space-x-1 items-center justify-center text-sm font-semibold rounded-sm px-4 py-[7px] hover:bg-gold-550 border border-gold-550 text-gold-550 hover:text-neutral-800 transition-all duration-150 ease-in-out">
+                <svg width="20px" height="20px">
+                  <use xlink:href="/assets/svg/share.svg#svg"></use>
+                </svg>
+                <span>Share</span>
+              </button>
 
-          <button
-              class="hidden md:flex space-x-1 items-center justify-center text-sm font-semibold rounded-sm px-4 py-2 bg-gold-550 text-neutral-800">
-            <svg width="20px" height="20px">
-              <use xlink:href="/assets/svg/circle-tick.svg#svg"></use>
-            </svg>
-            <span>Save</span>
-          </button>
+              <button
+                  class="flex-1 md:flex-0 flex space-x-1 items-center justify-center text-sm font-semibold rounded-sm px-4 py-2 bg-gold-550 text-neutral-800">
+                <svg width="20px" height="20px">
+                  <use xlink:href="/assets/svg/circle-tick.svg#svg"></use>
+                </svg>
+                <span>Save</span>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -132,6 +452,7 @@
 
             <div class="flex items-center space-x-4 w-full md:w-auto">
               <button
+                  @click="showExercises = true; showRoutines = false"
                   class="w-full md:w-auto flex space-x-1 items-center justify-center text-sm font-semibold rounded-sm px-4 py-2 bg-gold-550 text-neutral-800">
                 <svg width="20px" height="20px">
                   <use xlink:href="/assets/svg/plus.svg#svg"></use>
@@ -140,6 +461,7 @@
               </button>
 
               <button
+                  @click="showExercises = false; showRoutines = true"
                   class="w-full md:w-auto flex space-x-1 items-center justify-center text-sm font-semibold rounded-sm px-4 py-2 bg-gold-550 text-neutral-800">
                 <svg width="20px" height="20px">
                   <use xlink:href="/assets/svg/plus.svg#svg"></use>
@@ -183,8 +505,12 @@
                         class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-sm bg-neutral-800 border border-neutral-350 text-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
                         role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
                       <div class="py-1" role="none">
-                        <a href="#" class="block hover:bg-neutral-900 px-4 py-2 text-sm transition-all duration-150 ease-in-out">Copy Link</a>
-                        <a href="#" class="block hover:bg-neutral-900 px-4 py-2 text-sm transition-all duration-150 ease-in-out">Share Link</a>
+                        <a href="#"
+                           class="block hover:bg-neutral-900 px-4 py-2 text-sm transition-all duration-150 ease-in-out">Copy
+                          Link</a>
+                        <a href="#"
+                           class="block hover:bg-neutral-900 px-4 py-2 text-sm transition-all duration-150 ease-in-out">Share
+                          Link</a>
                       </div>
                     </div>
                   </transition>
@@ -218,8 +544,12 @@
                           class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-sm bg-neutral-800 border border-neutral-350 text-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
                           role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
                         <div class="py-1" role="none">
-                          <a href="#" class="block hover:bg-neutral-900 px-4 py-2 text-sm transition-all duration-150 ease-in-out">Copy Link</a>
-                          <a href="#" class="block hover:bg-neutral-900 px-4 py-2 text-sm transition-all duration-150 ease-in-out">Share Link</a>
+                          <a href="#"
+                             class="block hover:bg-neutral-900 px-4 py-2 text-sm transition-all duration-150 ease-in-out">Copy
+                            Link</a>
+                          <a href="#"
+                             class="block hover:bg-neutral-900 px-4 py-2 text-sm transition-all duration-150 ease-in-out">Share
+                            Link</a>
                         </div>
                       </div>
                     </transition>
@@ -290,8 +620,12 @@
                         class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-sm bg-neutral-800 border border-neutral-350 text-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
                         role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
                       <div class="py-1" role="none">
-                        <a href="#" class="block hover:bg-neutral-900 px-4 py-2 text-sm transition-all duration-150 ease-in-out">Copy Link</a>
-                        <a href="#" class="block hover:bg-neutral-900 px-4 py-2 text-sm transition-all duration-150 ease-in-out">Share Link</a>
+                        <a href="#"
+                           class="block hover:bg-neutral-900 px-4 py-2 text-sm transition-all duration-150 ease-in-out">Copy
+                          Link</a>
+                        <a href="#"
+                           class="block hover:bg-neutral-900 px-4 py-2 text-sm transition-all duration-150 ease-in-out">Share
+                          Link</a>
                       </div>
                     </div>
                   </transition>
@@ -322,8 +656,12 @@
                           class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-sm bg-neutral-800 border border-neutral-350 text-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
                           role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
                         <div class="py-1" role="none">
-                          <a href="#" class="block hover:bg-neutral-900 px-4 py-2 text-sm transition-all duration-150 ease-in-out">Copy Link</a>
-                          <a href="#" class="block hover:bg-neutral-900 px-4 py-2 text-sm transition-all duration-150 ease-in-out">Share Link</a>
+                          <a href="#"
+                             class="block hover:bg-neutral-900 px-4 py-2 text-sm transition-all duration-150 ease-in-out">Copy
+                            Link</a>
+                          <a href="#"
+                             class="block hover:bg-neutral-900 px-4 py-2 text-sm transition-all duration-150 ease-in-out">Share
+                            Link</a>
                         </div>
                       </div>
                     </transition>
@@ -356,8 +694,12 @@
                           class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-sm bg-neutral-800 border border-neutral-350 text-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
                           role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
                         <div class="py-1" role="none">
-                          <a href="#" class="block hover:bg-neutral-900 px-4 py-2 text-sm transition-all duration-150 ease-in-out">Copy Link</a>
-                          <a href="#" class="block hover:bg-neutral-900 px-4 py-2 text-sm transition-all duration-150 ease-in-out">Share Link</a>
+                          <a href="#"
+                             class="block hover:bg-neutral-900 px-4 py-2 text-sm transition-all duration-150 ease-in-out">Copy
+                            Link</a>
+                          <a href="#"
+                             class="block hover:bg-neutral-900 px-4 py-2 text-sm transition-all duration-150 ease-in-out">Share
+                            Link</a>
                         </div>
                       </div>
                     </transition>
@@ -420,37 +762,17 @@
         </Accordion>
       </div>
 
-      <div class="!mb-4 mt-8">
-        <button
-            class="flex space-x-3 items-center justify-center font-semibold rounded-sm px-8 py-4 border border-neutral-350 hover:border-gold-550 bg-neutral-800 hover:bg-gold-550 text-gold-550 hover:text-neutral-800 transition-all duration-150 ease-in-out">
-          <svg width="24px" height="24px">
-            <use xlink:href="/assets/svg/plus-big.svg#svg"></use>
-          </svg>
-          <span>Add more block to this to day</span>
-        </button>
-      </div>
+      <button
+          class="w-full md:w-auto max-w-xl 2xl:max-w-2xl flex space-x-3 items-center justify-center font-semibold rounded-sm px-8 py-4 border border-neutral-350 hover:border-gold-550 bg-neutral-800 hover:bg-gold-550 text-gold-550 hover:text-neutral-800 transition-all duration-150 ease-in-out">
+        <svg width="24px" height="24px">
+          <use xlink:href="/assets/svg/plus-big.svg#svg"></use>
+        </svg>
+        <span>Add more block to this to day</span>
+      </button>
 
       <!-- Helps to create empty spacing so that content does not get overlapped by save/share buttons in mobile view -->
       <!-- Not a clean approach -->
-      <div class="md:hidden pb-10 md:pb-0"></div>
-
-      <div class="md:hidden fixed bottom-0 inset-x-0 flex space-x-4 bg-neutral-800 p-4">
-        <button
-            class="w-full flex space-x-1 items-center justify-center text-sm font-semibold rounded-sm px-4 py-3 hover:bg-gold-550 border border-gold-550 text-gold-550 hover:text-neutral-800 transition-all duration-150 ease-in-out">
-          <svg width="20px" height="20px">
-            <use xlink:href="/assets/svg/share.svg#svg"></use>
-          </svg>
-          <span>Share</span>
-        </button>
-
-        <button
-            class="w-full flex space-x-1 items-center justify-center text-sm font-semibold rounded-sm px-4 py-3 bg-gold-550 text-neutral-800">
-          <svg width="20px" height="20px">
-            <use xlink:href="/assets/svg/circle-tick.svg#svg"></use>
-          </svg>
-          <span>Save</span>
-        </button>
-      </div>
+      <div class="md:hidden pb-14 md:pb-0"></div>
     </div>
   </MainLayout>
 </template>
@@ -471,4 +793,7 @@ const openedDropdownThree = ref(false);
 const openedDropdownFour = ref(false);
 const openedDropdownFive = ref(false);
 const openedDropdownSix = ref(false);
+
+const showExercises = ref(false);
+const showRoutines = ref(false);
 </script>
