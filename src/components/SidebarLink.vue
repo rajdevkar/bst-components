@@ -3,7 +3,7 @@
 <template>
   <div class="relative">
     <a :id="`item-${name}`" href="/"
-       class="peer flex items-center space-x-2 w-full hover:bg-neutral-900 active:bg-gold-600 text-white active:text-neutral-750 text-sm font-medium rounded-sm px-4 py-2 transition-all duration-150 ease-in-out"
+       class="peer flex items-center space-x-2 w-full hover:bg-neutral-900 active:bg-gold-950 text-white active:text-neutral-750 text-sm font-medium rounded-sm px-4 py-2 transition-all duration-150 ease-in-out"
         :onmouseenter="mouseShow">
       <svg width="24px" height="24px">
         <use :xlink:href="iconLink"></use>
@@ -15,7 +15,7 @@
     <!-- Tooltip to show when sidebar is collapsed -->
     <div class="hidden fixed left-16 peer-hover:inline-block ml-6" :style="`top: ${position}px`" v-if="collapsed">
       <div
-          class="whitespace-nowrap text-neutral-750 bg-gold-600 rounded-sm text-sm font-semibold px-3 py-[10px] transition-opacity duration-150 ease-in-out after:absolute after:top-[40%] after:-left-2 after:mt-0 after:border-4 after:border-solid after:border-transparent after:border-r-gold-550">
+          class="whitespace-nowrap text-neutral-750 bg-gold-550 rounded-sm text-sm font-semibold px-3 py-[10px] transition-opacity duration-150 ease-in-out after:absolute after:top-[40%] after:-left-2 after:mt-0 after:border-4 after:border-solid after:border-transparent after:border-r-gold-550">
         {{ name }} <!-- e.g Dashboard -->
       </div>
     </div>

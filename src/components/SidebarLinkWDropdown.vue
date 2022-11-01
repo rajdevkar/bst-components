@@ -2,7 +2,8 @@
 <!-- collapsed variable in v-if tags indicates sidebar is closed or open. You can ignore v-if tags -->
 <template>
     <div>
-        <div class="group flex items-center space-x-2 w-full hover:bg-neutral-900 active:bg-gold-550 text-white active:text-neutral-800 text-sm font-medium rounded-sm px-4 py-2 transition-all duration-150 ease-in-out cursor-pointer">
+        <div
+            class="group flex items-center space-x-2 w-full hover:bg-neutral-900 active:bg-gold-950 text-white active:text-neutral-800 text-sm font-medium rounded-sm px-4 py-2 transition-all duration-150 ease-in-out cursor-pointer">
             <svg width="24px" height="24px">
                 <use :xlink:href="iconLink"></use>
             </svg>
@@ -15,7 +16,7 @@
         </div>
         <div class="flex flex-col space-y-2 pl-6 mt-2" v-if="dropDownList && !collapsed">
             <div
-                class="group flex items-center space-x-2 w-full hover:bg-neutral-900 active:bg-gold-550 text-white active:text-neutral-800 text-sm font-medium rounded-sm px-4 py-2 transition-all duration-150 ease-in-out cursor-pointer" v-for="(item, index) in dropDownList" :key="index">
+                class="group flex items-center space-x-2 w-full hover:bg-neutral-900 active:bg-gold-950 text-white active:text-neutral-800 text-sm font-medium rounded-sm px-4 py-2 transition-all duration-150 ease-in-out cursor-pointer" v-for="(item, index) in dropDownList" :key="index">
                 <svg width="24px" height="24px">
                     <use xlink:href="/assets/svg/minus.svg#svg"></use>
                 </svg>

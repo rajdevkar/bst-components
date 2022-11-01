@@ -27,7 +27,7 @@
               <button
                   type="button"
                   @click="showExercises = false"
-                  class="flex lg:hidden items-center justify-center text-sm font-semibold rounded-sm p-[7px] hover:bg-gold-550 border border-gold-550 text-gold-550 hover:text-neutral-800 transition-all duration-150 ease-in-out"
+                  class="flex lg:hidden items-center justify-center text-sm font-semibold rounded-sm p-[7px] hover:bg-gold-950 border border-gold-550 hover:border-gold-950 text-gold-550 hover:text-neutral-800 transition-all duration-150 ease-in-out"
               >
                 <svg width="20px" height="20px">
                   <use xlink:href="/assets/svg/close.svg#svg"></use>
@@ -54,23 +54,23 @@
 
           <div class="flex flex-wrap gap-2">
             <div
-                class="inline-block whitespace-nowrap bg-blue-100 hover:bg-gold-550 active:bg-gold-550 text-sm text-neutral-800 rounded-sm px-2 py-1 transition-all duration-150 ease-in-out cursor-pointer">
+                class="inline-block whitespace-nowrap bg-blue-100 hover:bg-gold-950 active:bg-gold-950 text-sm text-neutral-800 rounded-sm px-2 py-1 transition-all duration-150 ease-in-out cursor-pointer">
               Balance (all types)
             </div>
             <div
-                class="inline-block whitespace-nowrap bg-blue-100 hover:bg-gold-550 active:bg-gold-550 text-sm text-neutral-800 rounded-sm px-2 py-1 transition-all duration-150 ease-in-out cursor-pointer">
+                class="inline-block whitespace-nowrap bg-blue-100 hover:bg-gold-950 active:bg-gold-950 text-sm text-neutral-800 rounded-sm px-2 py-1 transition-all duration-150 ease-in-out cursor-pointer">
               Quadruped exercises
             </div>
             <div
-                class="inline-block whitespace-nowrap bg-blue-100 hover:bg-gold-550 active:bg-gold-550 text-sm text-neutral-800 rounded-sm px-2 py-1 transition-all duration-150 ease-in-out cursor-pointer">
+                class="inline-block whitespace-nowrap bg-blue-100 hover:bg-gold-950 active:bg-gold-950 text-sm text-neutral-800 rounded-sm px-2 py-1 transition-all duration-150 ease-in-out cursor-pointer">
               Balance (all types)
             </div>
             <div
-                class="inline-block whitespace-nowrap bg-blue-100 hover:bg-gold-550 active:bg-gold-550 text-sm text-neutral-800 rounded-sm px-2 py-1 transition-all duration-150 ease-in-out cursor-pointer">
+                class="inline-block whitespace-nowrap bg-blue-100 hover:bg-gold-950 active:bg-gold-950 text-sm text-neutral-800 rounded-sm px-2 py-1 transition-all duration-150 ease-in-out cursor-pointer">
               Balance (all)
             </div>
             <div
-                class="inline-block whitespace-nowrap bg-blue-100 hover:bg-gold-550 active:bg-gold-550 text-sm text-neutral-800 rounded-sm px-2 py-1 transition-all duration-150 ease-in-out cursor-pointer">
+                class="inline-block whitespace-nowrap bg-blue-100 hover:bg-gold-950 active:bg-gold-950 text-sm text-neutral-800 rounded-sm px-2 py-1 transition-all duration-150 ease-in-out cursor-pointer">
               Quadruped exercises
             </div>
           </div>
@@ -82,7 +82,7 @@
               <img src="/assets/imgs/1.png"
                    class="w-full object-cover flex-1 aspect-videos rounded-sm"/>
               <button
-                  class="absolute bottom-2 right-2 flex space-x-1 items-center justify-center text-sm font-semibold rounded-sm px-3 py-2 bg-gold-550 text-neutral-800">
+                  class="absolute bottom-2 right-2 flex space-x-1 items-center justify-center text-sm font-semibold rounded-sm px-3 py-2 bg-gold-550 hover:bg-gold-950 text-neutral-800 transition-all ease-in-out duration-150">
                 <svg width="20px" height="20px">
                   <use xlink:href="/assets/svg/plus.svg#svg"></use>
                 </svg>
@@ -97,7 +97,7 @@
               <img src="/assets/imgs/2.png"
                    class="w-full object-cover flex-1 aspect-videos rounded-sm"/>
               <button
-                  class="absolute bottom-2 right-2 flex space-x-1 items-center justify-center text-sm font-semibold rounded-sm px-3 py-2 bg-gold-550 text-neutral-800">
+                  class="absolute bottom-2 right-2 flex space-x-1 items-center justify-center text-sm font-semibold rounded-sm px-3 py-2 bg-gold-550 hover:bg-gold-950 text-neutral-800 transition-all ease-in-out duration-150">
                 <svg width="20px" height="20px">
                   <use xlink:href="/assets/svg/tick.svg#svg"></use>
                 </svg>
@@ -112,7 +112,7 @@
               <img src="/assets/imgs/3.png"
                    class="w-full object-cover flex-1 aspect-videos rounded-sm"/>
               <button
-                  class="absolute bottom-2 right-2 flex space-x-1 items-center justify-center text-sm font-semibold rounded-sm px-3 py-2 bg-gold-550 text-neutral-800">
+                  class="absolute bottom-2 right-2 flex space-x-1 items-center justify-center text-sm font-semibold rounded-sm px-3 py-2 bg-gold-550 hover:bg-gold-950 text-neutral-800 transition-all ease-in-out duration-150">
                 <svg width="20px" height="20px">
                   <use xlink:href="/assets/svg/plus.svg#svg"></use>
                 </svg>
@@ -127,7 +127,7 @@
               <img src="/assets/imgs/4.png"
                    class="w-full object-cover flex-1 aspect-videos rounded-sm"/>
               <button
-                  class="absolute bottom-2 right-2 flex space-x-1 items-center justify-center text-sm font-semibold rounded-sm px-3 py-2 bg-gold-550 text-neutral-800">
+                  class="absolute bottom-2 right-2 flex space-x-1 items-center justify-center text-sm font-semibold rounded-sm px-3 py-2 bg-gold-550 hover:bg-gold-950 text-neutral-800 transition-all ease-in-out duration-150">
                 <svg width="20px" height="20px">
                   <use xlink:href="/assets/svg/plus.svg#svg"></use>
                 </svg>
@@ -142,7 +142,7 @@
               <img src="/assets/imgs/1.png"
                    class="w-full object-cover flex-1 aspect-videos rounded-sm"/>
               <button
-                  class="absolute bottom-2 right-2 flex space-x-1 items-center justify-center text-sm font-semibold rounded-sm px-3 py-2 bg-gold-550 text-neutral-800">
+                  class="absolute bottom-2 right-2 flex space-x-1 items-center justify-center text-sm font-semibold rounded-sm px-3 py-2 bg-gold-550 hover:bg-gold-950 text-neutral-800 transition-all ease-in-out duration-150">
                 <svg width="20px" height="20px">
                   <use xlink:href="/assets/svg/plus.svg#svg"></use>
                 </svg>
@@ -157,7 +157,7 @@
               <img src="/assets/imgs/1.png"
                    class="w-full object-cover flex-1 aspect-videos rounded-sm"/>
               <button
-                  class="absolute bottom-2 right-2 flex space-x-1 items-center justify-center text-sm font-semibold rounded-sm px-3 py-2 bg-gold-550 text-neutral-800">
+                  class="absolute bottom-2 right-2 flex space-x-1 items-center justify-center text-sm font-semibold rounded-sm px-3 py-2 bg-gold-550 hover:bg-gold-950 text-neutral-800 transition-all ease-in-out duration-150">
                 <svg width="20px" height="20px">
                   <use xlink:href="/assets/svg/plus.svg#svg"></use>
                 </svg>
@@ -195,7 +195,7 @@
               <button
                   type="button"
                   @click="showRoutines = false"
-                  class="flex lg:hidden items-center justify-center text-sm font-semibold rounded-sm p-[7px] hover:bg-gold-550 border border-gold-550 text-gold-550 hover:text-neutral-800 transition-all duration-150 ease-in-out"
+                  class="flex lg:hidden items-center justify-center text-sm font-semibold rounded-sm p-[7px] hover:bg-gold-950 border border-gold-550 hover:border-gold-950 text-gold-550 hover:text-neutral-800 transition-all duration-150 ease-in-out"
               >
                 <svg width="20px" height="20px">
                   <use xlink:href="/assets/svg/close.svg#svg"></use>
@@ -221,16 +221,20 @@
           </div>
 
           <div class="flex flex-wrap gap-2 w-full max-w-xl 2xl:max-w-2xl">
-            <div class="inline-block whitespace-nowrap bg-blue-100 hover:bg-gold-550 active:bg-gold-550 text-sm text-neutral-800 rounded-sm px-2 py-1 transition-all duration-150 ease-in-out cursor-pointer">
+            <div
+                class="inline-block whitespace-nowrap bg-blue-100 hover:bg-gold-950 active:bg-gold-950 text-sm text-neutral-800 rounded-sm px-2 py-1 transition-all duration-150 ease-in-out cursor-pointer">
               Dynamic mobility routines
             </div>
-            <div class="inline-block whitespace-nowrap bg-blue-100 hover:bg-gold-550 active:bg-gold-550 text-sm text-neutral-800 rounded-sm px-2 py-1 transition-all duration-150 ease-in-out cursor-pointer">
+            <div
+                class="inline-block whitespace-nowrap bg-blue-100 hover:bg-gold-950 active:bg-gold-950 text-sm text-neutral-800 rounded-sm px-2 py-1 transition-all duration-150 ease-in-out cursor-pointer">
               Neuro wake up routines
             </div>
-            <div class="inline-block whitespace-nowrap bg-blue-100 hover:bg-gold-550 active:bg-gold-550 text-sm text-neutral-800 rounded-sm px-2 py-1 transition-all duration-150 ease-in-out cursor-pointer">
+            <div
+                class="inline-block whitespace-nowrap bg-blue-100 hover:bg-gold-950 active:bg-gold-950 text-sm text-neutral-800 rounded-sm px-2 py-1 transition-all duration-150 ease-in-out cursor-pointer">
               Warm Down Routines
             </div>
-            <div class="inline-block whitespace-nowrap bg-blue-100 hover:bg-gold-550 active:bg-gold-550 text-sm text-neutral-800 rounded-sm px-2 py-1 transition-all duration-150 ease-in-out cursor-pointer">
+            <div
+                class="inline-block whitespace-nowrap bg-blue-100 hover:bg-gold-950 active:bg-gold-950 text-sm text-neutral-800 rounded-sm px-2 py-1 transition-all duration-150 ease-in-out cursor-pointer">
               Warm Up Routines
             </div>
           </div>
@@ -247,14 +251,14 @@
                 <span class="font-medium">Balance-Mobility WU #1</span>
                 <div class="flex items-center space-x-2">
                   <button
-                      class="flex items-center justify-center text-sm font-semibold rounded-sm p-[7px] hover:bg-gold-550 border border-gold-550 text-gold-550 hover:text-neutral-800 transition-all duration-150 ease-in-out">
+                      class="flex items-center justify-center text-sm font-semibold rounded-sm p-[7px] hover:bg-gold-950 border border-gold-550 hover:border-gold-950 text-gold-550 hover:text-neutral-800 transition-all duration-150 ease-in-out">
                     <svg width="16px" height="16px">
                       <use xlink:href="/assets/svg/eye.svg#svg"></use>
                     </svg>
                   </button>
 
                   <button
-                      class="flex items-center justify-center text-sm font-semibold rounded-sm p-1.5 bg-gold-550 text-neutral-800">
+                      class="flex items-center justify-center text-sm font-semibold rounded-sm p-1.5 bg-gold-550 hover:bg-gold-950 text-neutral-800 transition-all duration-150 ease-in-out">
                     <svg width="20px" height="20px">
                       <use xlink:href="/assets/svg/plus.svg#svg"></use>
                     </svg>
@@ -269,14 +273,14 @@
                 <span class="font-medium">Balance-Mobility WU #2</span>
                 <div class="flex items-center space-x-2">
                   <button
-                      class="flex items-center justify-center text-sm font-semibold rounded-sm p-[7px] hover:bg-gold-550 border border-gold-550 text-gold-550 hover:text-neutral-800 transition-all duration-150 ease-in-out">
+                      class="flex items-center justify-center text-sm font-semibold rounded-sm p-[7px] hover:bg-gold-950 border border-gold-550 hover:border-gold-950 text-gold-550 hover:text-neutral-800 transition-all duration-150 ease-in-out">
                     <svg width="16px" height="16px">
                       <use xlink:href="/assets/svg/eye.svg#svg"></use>
                     </svg>
                   </button>
 
                   <button
-                      class="flex items-center justify-center text-sm font-semibold rounded-sm p-1.5 bg-gold-550 text-neutral-800">
+                      class="flex items-center justify-center text-sm font-semibold rounded-sm p-1.5 bg-gold-550 hover:bg-gold-950 text-neutral-800 transition-all duration-150 ease-in-out">
                     <svg width="20px" height="20px">
                       <use xlink:href="/assets/svg/tick.svg#svg"></use>
                     </svg>
@@ -291,14 +295,14 @@
                 <span class="font-medium">Balance-Mobility WU #3</span>
                 <div class="flex items-center space-x-2">
                   <button
-                      class="flex items-center justify-center text-sm font-semibold rounded-sm p-[7px] hover:bg-gold-550 border border-gold-550 text-gold-550 hover:text-neutral-800 transition-all duration-150 ease-in-out">
+                      class="flex items-center justify-center text-sm font-semibold rounded-sm p-[7px] hover:bg-gold-950 border border-gold-550 hover:border-gold-950 text-gold-550 hover:text-neutral-800 transition-all duration-150 ease-in-out">
                     <svg width="16px" height="16px">
                       <use xlink:href="/assets/svg/eye.svg#svg"></use>
                     </svg>
                   </button>
 
                   <button
-                      class="flex items-center justify-center text-sm font-semibold rounded-sm p-1.5 bg-gold-550 text-neutral-800">
+                      class="flex items-center justify-center text-sm font-semibold rounded-sm p-1.5 bg-gold-550 hover:bg-gold-950 text-neutral-800 transition-all duration-150 ease-in-out">
                     <svg width="20px" height="20px">
                       <use xlink:href="/assets/svg/plus.svg#svg"></use>
                     </svg>
@@ -390,7 +394,7 @@
             <button
                 type="button"
                 @click="openedDropdownOne = !openedDropdownOne"
-                class="flex items-center justify-center text-sm font-semibold rounded-sm p-[7px] hover:bg-gold-550 border border-gold-550 text-gold-550 hover:text-neutral-800 transition-all duration-150 ease-in-out"
+                class="flex items-center justify-center text-sm font-semibold rounded-sm p-[7px] hover:bg-gold-950 border border-gold-550 hover:border-gold-950 text-gold-550 hover:text-neutral-800 transition-all duration-150 ease-in-out"
             >
               <svg width="20px" height="20px">
                 <use xlink:href="/assets/svg/dots.svg#svg"></use>
@@ -422,7 +426,7 @@
           <div class="md:relative fixed bottom-0 inset-x-0 flex justify-center bg-neutral-800 md:bg-transparent p-4 md:p-0">
             <div class="flex space-x-4 w-full max-w-xl 2xl:max-w-2xl">
               <button
-                  class="flex-1 md:flex-0 flex space-x-1 items-center justify-center text-sm font-semibold rounded-sm px-4 py-[7px] hover:bg-gold-550 border border-gold-550 text-gold-550 hover:text-neutral-800 transition-all duration-150 ease-in-out">
+                  class="flex-1 md:flex-0 flex space-x-1 items-center justify-center text-sm font-semibold rounded-sm px-4 py-[7px] hover:bg-gold-950 border border-gold-550 hover:border-gold-950 text-gold-550 hover:text-neutral-800 transition-all duration-150 ease-in-out">
                 <svg width="20px" height="20px">
                   <use xlink:href="/assets/svg/share.svg#svg"></use>
                 </svg>
@@ -430,7 +434,7 @@
               </button>
 
               <button
-                  class="flex-1 md:flex-0 flex space-x-1 items-center justify-center text-sm font-semibold rounded-sm px-4 py-2 bg-gold-550 text-neutral-800">
+                  class="flex-1 md:flex-0 flex space-x-1 items-center justify-center text-sm font-semibold rounded-sm px-4 py-2 bg-gold-550 hover:bg-gold-950 text-neutral-800 transition-all duration-150 ease-in-out">
                 <svg width="20px" height="20px">
                   <use xlink:href="/assets/svg/circle-tick.svg#svg"></use>
                 </svg>
@@ -453,7 +457,7 @@
             <div class="flex items-center space-x-4 w-full md:w-auto">
               <button
                   @click="showExercises = true; showRoutines = false"
-                  class="w-full md:w-auto flex space-x-1 items-center justify-center text-sm font-semibold rounded-sm px-4 py-2 bg-gold-550 text-neutral-800">
+                  class="w-full md:w-auto flex space-x-1 items-center justify-center text-sm font-semibold rounded-sm px-4 py-2 bg-gold-550 hover:bg-gold-950 text-neutral-800 transition-all duration-150 ease-in-out">
                 <svg width="20px" height="20px">
                   <use xlink:href="/assets/svg/plus.svg#svg"></use>
                 </svg>
@@ -462,7 +466,7 @@
 
               <button
                   @click="showExercises = false; showRoutines = true"
-                  class="w-full md:w-auto flex space-x-1 items-center justify-center text-sm font-semibold rounded-sm px-4 py-2 bg-gold-550 text-neutral-800">
+                  class="w-full md:w-auto flex space-x-1 items-center justify-center text-sm font-semibold rounded-sm px-4 py-2 bg-gold-550 hover:bg-gold-950 text-neutral-800 transition-all duration-150 ease-in-out">
                 <svg width="20px" height="20px">
                   <use xlink:href="/assets/svg/plus.svg#svg"></use>
                 </svg>
@@ -561,11 +565,11 @@
                       class="peer group w-full flex items-center bg-white text-neutral-800 placeholder:text-gray-400 rounded-sm overflow-hidden text-sm">
                     <input placeholder="Add Sets/Reps/Notes if any..." v-model="inputText"
                            class="w-full bg-transparent focus:outline-none px-4 py-2 border focus-within:border-transparent border-gray-200"/>
-                    <div
+                    <button
                         v-if="inputText.length > 0"
                         class="bg-gold-550 text-neutral-800 border border-gold-550 font-medium py-2 px-4">
                       Done
-                    </div>
+                    </button>
                   </div>
                   <div
                       v-if="inputText.length > 0"
@@ -711,11 +715,11 @@
                       class="peer group w-full flex items-center bg-white text-neutral-800 placeholder:text-gray-400 rounded-sm overflow-hidden text-sm">
                     <input placeholder="Add Sets/Reps/Notes if any..." v-model="inputTextTwo"
                            class="w-full bg-transparent focus:outline-none px-4 py-2 border focus-within:border-transparent border-gray-200"/>
-                    <div
+                    <button
                         v-if="inputTextTwo.length > 0"
                         class="bg-gold-550 text-neutral-800 border border-gold-550 font-medium py-2 px-4">
                       Done
-                    </div>
+                    </button>
                   </div>
                   <div
                       v-if="inputTextTwo.length > 0"
@@ -743,7 +747,7 @@
 
             <div class="flex self-center items-center space-x-4 w-full md:w-auto ">
               <button
-                  class="w-full md:w-auto flex space-x-1 items-center justify-center text-sm font-semibold rounded-sm px-4 py-2 bg-gold-550 text-neutral-800">
+                  class="w-full md:w-auto flex space-x-1 items-center justify-center text-sm font-semibold rounded-sm px-4 py-2 bg-gold-550 hover:bg-gold-950 text-neutral-800 transition-all duration-150 ease-in-out">
                 <svg width="20px" height="20px">
                   <use xlink:href="/assets/svg/plus.svg#svg"></use>
                 </svg>
@@ -751,7 +755,7 @@
               </button>
 
               <button
-                  class="w-full md:w-auto flex space-x-1 items-center justify-center text-sm font-semibold rounded-sm px-4 py-2 bg-gold-550 text-neutral-800">
+                  class="w-full md:w-auto flex space-x-1 items-center justify-center text-sm font-semibold rounded-sm px-4 py-2 bg-gold-550 hover:bg-gold-950 text-neutral-800 transition-all duration-150 ease-in-out">
                 <svg width="20px" height="20px">
                   <use xlink:href="/assets/svg/plus.svg#svg"></use>
                 </svg>
@@ -763,7 +767,7 @@
       </div>
 
       <button
-          class="w-full md:w-auto max-w-xl 2xl:max-w-2xl flex space-x-3 items-center justify-center font-semibold rounded-sm px-8 py-4 border border-neutral-350 hover:border-gold-550 bg-neutral-800 hover:bg-gold-550 text-gold-550 hover:text-neutral-800 transition-all duration-150 ease-in-out">
+          class="w-full md:w-auto max-w-xl 2xl:max-w-2xl flex space-x-3 items-center justify-center font-semibold rounded-sm px-8 py-4 border border-neutral-350 hover:border-gold-950 bg-neutral-800 hover:bg-gold-950 text-gold-550 hover:text-neutral-800 transition-all duration-150 ease-in-out">
         <svg width="24px" height="24px">
           <use xlink:href="/assets/svg/plus-big.svg#svg"></use>
         </svg>

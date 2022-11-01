@@ -10,7 +10,8 @@
         <input type="text" placeholder="Search" class="w-full text-sm bg-transparent text-white focus:outline-none"/>
       </div>
 
-      <button class="flex space-x-1 items-center justify-center text-sm font-semibold rounded-sm px-4 py-2 bg-gold-550 text-neutral-800">
+      <button
+          class="flex space-x-1 items-center justify-center text-sm font-semibold rounded-sm px-4 py-2 bg-gold-550 hover:bg-gold-950 text-neutral-800 transition-all duration-150 ease-in-out">
         <svg width="20px" height="20px">
           <use xlink:href="/assets/svg/plus.svg#svg"></use>
         </svg>
@@ -23,7 +24,7 @@
         <!-- Loop all groups in this div -->
         <div v-for="(group, index) in groups" :key="index">
           <div
-              class="group flex items-center justify-between space-x-2 md:space-x-4 hover:bg-gold-550 text-sm hover:text-neutral-800 font-semibold pl-4 pr-3 py-2 my-1 rounded-sm cursor-pointer"
+              class="group flex items-center justify-between space-x-2 md:space-x-4 hover:bg-gold-950 text-sm hover:text-neutral-800 font-semibold pl-4 pr-3 py-2 my-1 rounded-sm cursor-pointer transition-all duration-150 ease-in-out"
               :class="{'bg-gold-600 text-neutral-800': group.edit || group.selected}"
           >
             <!-- on edit button press make this contenteditable true, watch innerText of span tag to update values on submit -->
