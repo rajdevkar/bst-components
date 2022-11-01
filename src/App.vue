@@ -423,10 +423,33 @@
             </transition>
           </div>
 
+          <transition enter-active-class="transition ease-out duration-100"
+                      enter-from-class="transform opacity-0 scale-95"
+                      enter-to-class="transform opacity-100 scale-100"
+                      leave-active-class="transition ease-in duration-75"
+                      leave-from-class="transform opacity-100 scale-100"
+                      leave-to-class="transform opacity-0 scale-95">
+            <div v-if="openedShareModal"
+                 @click.self="openedShareModal = false"
+                 class="absolute inset-0 z-50 flex items-center justify-center bg-neutral-900/60 px-4">
+              <div class="w-full max-w-md rounded-sm bg-neutral-800 border border-neutral-350 text-white shadow-lg">
+                <div class="py-1" role="none">
+                  <a href="#"
+                     class="block hover:bg-neutral-900 px-4 py-2 text-sm transition-all duration-150 ease-in-out">Copy
+                    Link</a>
+                  <a href="#"
+                     class="block hover:bg-neutral-900 px-4 py-2 text-sm transition-all duration-150 ease-in-out">Share
+                    Link</a>
+                </div>
+              </div>
+            </div>
+          </transition>
+
           <div
               class="md:relative fixed bottom-0 inset-x-0 flex justify-center bg-neutral-900 md:bg-transparent p-4 md:p-0 z-40">
             <div class="flex space-x-4 w-full max-w-xl 2xl:max-w-2xl">
               <button
+                  @click="openedShareModal = true"
                   class="flex-1 md:flex-0 flex space-x-1 items-center justify-center text-sm font-semibold rounded-sm px-4 py-[7px] hover:bg-gold-950 border border-gold-550 hover:border-gold-950 text-gold-550 hover:text-neutral-800 transition-all duration-150 ease-in-out">
                 <svg width="20px" height="20px">
                   <use xlink:href="/assets/svg/share.svg#svg"></use>
@@ -798,6 +821,7 @@ const openedDropdownThree = ref(false);
 const openedDropdownFour = ref(false);
 const openedDropdownFive = ref(false);
 const openedDropdownSix = ref(false);
+const openedShareModal = ref(false);
 
 const showExercises = ref(false);
 const showRoutines = ref(false);
