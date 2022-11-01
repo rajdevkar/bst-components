@@ -423,7 +423,8 @@
             </transition>
           </div>
 
-          <div class="md:relative fixed bottom-0 inset-x-0 flex justify-center bg-neutral-800 md:bg-transparent p-4 md:p-0">
+          <div
+              class="md:relative fixed bottom-0 inset-x-0 flex justify-center bg-neutral-900 md:bg-transparent p-4 md:p-0 z-40">
             <div class="flex space-x-4 w-full max-w-xl 2xl:max-w-2xl">
               <button
                   class="flex-1 md:flex-0 flex space-x-1 items-center justify-center text-sm font-semibold rounded-sm px-4 py-[7px] hover:bg-gold-950 border border-gold-550 hover:border-gold-950 text-gold-550 hover:text-neutral-800 transition-all duration-150 ease-in-out">
